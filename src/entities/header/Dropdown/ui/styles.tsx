@@ -22,7 +22,7 @@ export const BasicListBox = styled.li`
   text-align: center;
   cursor: pointer;
   &:hover {
-    background-color: rgb(248, 249, 250);
+    background-color: var(--color-point);
   }
 `;
 
@@ -50,17 +50,22 @@ export const DropListBox = styled.ul`
   padding: 1rem 1.1rem;
 `;
 
-export const ListBox = styled.li<{ isActive: boolean }>`
+export const ListBox = styled.li<{ $isactive: string }>`
   white-space: nowrap;
   cursor: pointer;
   border-radius: 8px;
-  background-color: ${(props) => (props.isActive ? "var(--color-point)" : "rgb(248, 249, 250)")};
+  background-color: ${(props) => (props.$isactive === "true" ? "#d3d3d3" : "white")};
+
   padding: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--color-font-gray);
   box-sizing: border-box;
+
+  &:hover {
+    background-color: var(--color-point);
+  }
 `;
 
 export const OptionSelectButton = styled.button`

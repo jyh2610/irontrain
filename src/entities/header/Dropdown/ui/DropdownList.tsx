@@ -1,4 +1,4 @@
-import { Dispatch, useState } from "react";
+import { Dispatch, useEffect, useState } from "react";
 import {
   BasicDropListContainer,
   DropListContainer,
@@ -13,22 +13,23 @@ interface Props {
   vertical?: boolean;
   list: string[];
   setIsOpen: Dispatch<React.SetStateAction<boolean>>;
+  onSelectionChange: (selectedItems: string[]) => void; // 추가된 콜백 함수
 }
 
-export const DropdownList = ({ list, setIsOpen, vertical }: Props) => {
-  const [selectedItem, setSelectedItem] = useState<number[]>([]);
+export const DropdownList = ({ list, setIsOpen, vertical, onSelectionChange }: Props) => {
+  const [selectedItems, setSelectedItems] = useState<string[]>([]);
 
-  const selectList = (index: number) => {
-    if (findSelectedIndex(index)) {
-      setSelectedItem((prev) => prev.filter((item) => item !== index));
+  const selectItem = (item: string) => {
+    if (selectedItems.includes(item)) {
+      setSelectedItems((prev) => prev.filter((i) => i !== item));
     } else {
-      setSelectedItem((prev) => [...prev, index]);
+      setSelectedItems((prev) => [...prev, item]);
     }
   };
 
-  const findSelectedIndex = (index: number): boolean => {
-    return selectedItem.includes(index);
-  };
+  useEffect(() => {
+    onSelectionChange(selectedItems);
+  }, [selectedItems]);
 
   return (
     <>
@@ -36,7 +37,7 @@ export const DropdownList = ({ list, setIsOpen, vertical }: Props) => {
         <BasicDropListContainer>
           <BasicDropListBox>
             {list.map((item, index) => (
-              <BasicListBox key={index} onClick={() => setIsOpen((prev) => !prev)}>
+              <BasicListBox key={index} onClick={() => selectItem(item)}>
                 {item}
               </BasicListBox>
             ))}
@@ -46,7 +47,11 @@ export const DropdownList = ({ list, setIsOpen, vertical }: Props) => {
         <DropListContainer>
           <DropListBox>
             {list.map((item, index) => (
-              <ListBox key={index} isActive={findSelectedIndex(index)} onClick={() => selectList(index)}>
+              <ListBox
+                key={index}
+                $isactive={selectedItems.includes(item) ? "true" : "false"}
+                onClick={() => selectItem(item)}
+              >
                 {item}
               </ListBox>
             ))}

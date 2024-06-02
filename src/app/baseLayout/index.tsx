@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import GlobalStyles from "./GlobalStyles";
 import styled from "styled-components";
+import { BoardProvider } from "@src/entities";
 
 export const BaseLayout = () => {
   return (
@@ -8,7 +9,9 @@ export const BaseLayout = () => {
       <GlobalStyles />
       <ReviewContainer>
         <main>
-          <Outlet />
+          <BoardProvider>
+            <Outlet />
+          </BoardProvider>
         </main>
       </ReviewContainer>
     </>
