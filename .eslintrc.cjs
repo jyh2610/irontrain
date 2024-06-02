@@ -8,7 +8,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react-refresh", "react", "react-hooks", "@typescript-eslint", "prettier"],
+  plugins: ["react-refresh", "react", "react-hooks", "@typescript-eslint", "prettier", "@tanstack/eslint-plugin-query"],
   rules: {
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": [

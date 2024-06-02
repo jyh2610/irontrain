@@ -1,26 +1,36 @@
-import { Dispatch, useEffect, useState } from "react";
+import { Dispatch } from "react";
 import { DropListContainer, DropListBox, ListBox, OptionSelectButton } from "./styles";
+import { useBoardProvider } from "@src/entities";
+import { BoardFilterState } from "@src/entities/board/type";
+import { mappingTitle } from "../constant";
 
 interface Props {
+  title: string;
   list: string[];
   setIsOpen: Dispatch<React.SetStateAction<boolean>>;
-  onSelectionChange: (selectedItems: string[]) => void;
 }
 
-const HorizontalDropdownList = ({ list, setIsOpen, onSelectionChange }: Props) => {
-  const [selectedItems, setSelectedItems] = useState<string[]>([]);
+const HorizontalDropdownList = ({ title, list, setIsOpen }: Props) => {
+  const { filter, setFilter } = useBoardProvider();
+  const mappingKey: keyof BoardFilterState = mappingTitle[title];
 
   const selectItem = (item: string) => {
-    if (selectedItems.includes(item)) {
-      setSelectedItems((prev) => prev.filter((i) => i !== item));
+    if (filter[mappingKey].includes(item)) {
+      setFilter((prev) => {
+        return {
+          ...prev,
+          [mappingKey]: prev[mappingKey].filter((selectItem) => selectItem !== item),
+        };
+      });
     } else {
-      setSelectedItems((prev) => [...prev, item]);
+      setFilter((prev) => {
+        return {
+          ...prev,
+          [mappingKey]: [...prev[mappingKey], item],
+        };
+      });
     }
   };
-
-  useEffect(() => {
-    onSelectionChange(selectedItems);
-  }, [selectedItems]);
 
   return (
     <DropListContainer>
@@ -28,7 +38,7 @@ const HorizontalDropdownList = ({ list, setIsOpen, onSelectionChange }: Props) =
         {list.map((item, index) => (
           <ListBox
             key={index}
-            $isactive={selectedItems.includes(item) ? "true" : "false"}
+            $isactive={filter[mappingKey].includes(item) ? "true" : "false"}
             onClick={() => selectItem(item)}
           >
             {item}

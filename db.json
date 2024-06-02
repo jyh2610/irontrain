@@ -1,0 +1,954 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "title": "강남 초밥",
+      "date_created": "2024-06-02",
+      "content": "신선한 초밥과 다양한 회를 즐길 수 있는 강남 최고의 초밥집.",
+      "category": "일식",
+      "rating": 1.8,
+      "likes": 25,
+      "path": "/src/shared/assets/japn/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "likes": 25,
+          "like": 0,
+          "text": "정말 맛있어요! 추천합니다.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "을지로 국밥",
+      "date_created": "2024-06-02",
+      "content": "진한 육수와 부드러운 고기가 일품인 국밥집.",
+      "category": "한식",
+      "rating": 4.5,
+      "likes": 20,
+      "path": "/src/shared/assets/korea/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "이 국밥 정말 최고에요!",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "홍대 버거",
+      "date_created": "2024-06-02",
+      "content": "다양한 종류의 버거를 즐길 수 있는 핫플레이스.",
+      "category": "양식",
+      "rating": 4.3,
+      "likes": 15,
+      "path": "/src/shared/assets/itali/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "버거가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "인사동 찻집",
+      "date_created": "2024-06-02",
+      "content": "전통 찻집에서 즐기는 여유로운 시간.",
+      "category": "카페",
+      "rating": 4.7,
+      "likes": 18,
+      "path": "/src/shared/assets/cafe/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "차와 디저트가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "신촌 타코야키",
+      "date_created": "2024-06-02",
+      "content": "일본식 타코야키를 신촌에서 맛볼 수 있는 곳.",
+      "category": "일식",
+      "rating": 4.4,
+      "likes": 12,
+      "path": "/src/shared/assets/japn/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "타코야키가 정말 맛있어요!",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "광화문 순두부",
+      "date_created": "2024-06-02",
+      "content": "고소하고 부드러운 순두부를 즐길 수 있는 맛집.",
+      "category": "한식",
+      "rating": 4.6,
+      "likes": 22,
+      "path": "/src/shared/assets/korea/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "순두부 정말 맛있어요!",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "명동 찹쌀떡",
+      "date_created": "2024-06-02",
+      "content": "명동에서 즐기는 전통 찹쌀떡.",
+      "category": "디저트",
+      "rating": 4.5,
+      "likes": 19,
+      "path": "/src/shared/assets/dessert/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "찹쌀떡이 쫄깃하고 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "강남 파스타",
+      "date_created": "2024-06-02",
+      "content": "다양한 파스타를 맛볼 수 있는 이탈리안 레스토랑.",
+      "category": "양식",
+      "rating": 4.7,
+      "likes": 17,
+      "path": "/src/shared/assets/itali/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "파스타가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "홍대 디저트 카페",
+      "date_created": "2024-06-02",
+      "content": "다양한 디저트를 즐길 수 있는 카페.",
+      "category": "카페",
+      "rating": 4.6,
+      "likes": 20,
+      "path": "/src/shared/assets/cafe/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "디저트가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "을지로 갈비",
+      "date_created": "2024-06-02",
+      "content": "고기가 부드럽고 맛있는 갈비집.",
+      "category": "한식",
+      "rating": 4.8,
+      "likes": 23,
+      "path": "/src/shared/assets/korea/3.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "갈비 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "서울 타이 레스토랑",
+      "date_created": "2024-06-02",
+      "content": "정통 타이 요리를 즐길 수 있는 곳.",
+      "category": "태국식",
+      "rating": 4.7,
+      "likes": 18,
+      "path": "/src/shared/assets/etc/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "타이 음식이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "압구정 스테이크",
+      "date_created": "2024-06-02",
+      "content": "고급스러운 스테이크를 즐길 수 있는 레스토랑.",
+      "category": "양식",
+      "rating": 4.9,
+      "likes": 25,
+      "path": "/src/shared/assets/itali/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "스테이크가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "동대문 닭갈비",
+      "date_created": "2024-06-02",
+      "content": "매콤하고 달콤한 닭갈비가 일품인 맛집.",
+      "category": "한식",
+      "rating": 4.6,
+      "likes": 22,
+      "path": "/src/shared/assets/korea/4.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "닭갈비 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "잠실 피자",
+      "date_created": "2024-06-02",
+      "content": "다양한 토핑의 피자를 즐길 수 있는 곳.",
+      "category": "양식",
+      "rating": 4.5,
+      "likes": 19,
+      "path": "/src/shared/assets/itali/3.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "피자가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "이태원 중식당",
+      "date_created": "2024-06-02",
+      "content": "정통 중식을 맛볼 수 있는 이태원의 맛집.",
+      "category": "중식",
+      "rating": 4.7,
+      "likes": 21,
+      "path": "/src/shared/assets/etc/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "중식이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "명동 김밥천국",
+      "date_created": "2024-06-02",
+      "content": "다양한 김밥과 분식을 즐길 수 있는 곳.",
+      "category": "한식",
+      "rating": 4.3,
+      "likes": 15,
+      "path": "/src/shared/assets/korea/4.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "김밥이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "홍대 브런치 카페",
+      "date_created": "2024-06-02",
+      "content": "브런치를 즐길 수 있는 멋진 카페.",
+      "category": "카페",
+      "rating": 4.6,
+      "likes": 18,
+      "path": "/src/shared/assets/cafe/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "브런치가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "신촌 라멘",
+      "date_created": "2024-06-02",
+      "content": "진한 육수와 쫄깃한 면발이 일품인 라멘집.",
+      "category": "일식",
+      "rating": 4.8,
+      "likes": 23,
+      "path": "/src/shared/assets/japn/3.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "라멘 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "강남 베이커리",
+      "date_created": "2024-06-02",
+      "content": "다양한 빵과 케이크를 즐길 수 있는 베이커리.",
+      "category": "디저트",
+      "rating": 4.7,
+      "likes": 20,
+      "path": "/src/shared/assets/dessert/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "빵이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "을지로 떡볶이",
+      "date_created": "2024-06-02",
+      "content": "매콤한 떡볶이가 일품인 분식집.",
+      "category": "한식",
+      "rating": 4.5,
+      "likes": 19,
+      "path": "/src/shared/assets/korea/1.jpg/src/shared/assets/korea/5.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "떡볶이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "서울 카페",
+      "date_created": "2024-06-02",
+      "content": "분위기 좋은 카페에서 여유로운 시간.",
+      "category": "카페",
+      "rating": 4.6,
+      "likes": 18,
+      "path": "/src/shared/assets/cafe/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "커피가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "잠실 돈가스",
+      "date_created": "2024-06-02",
+      "content": "바삭하고 부드러운 돈가스를 즐길 수 있는 곳.",
+      "category": "일식",
+      "rating": 4.7,
+      "likes": 21,
+      "path": "/src/shared/assets/japn/4.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "돈가스 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "이태원 멕시칸 레스토랑",
+      "date_created": "2024-06-02",
+      "content": "정통 멕시칸 요리를 즐길 수 있는 곳.",
+      "category": "멕시코식",
+      "rating": 4.8,
+      "likes": 23,
+      "path": "",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "타코가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "강남 중식당",
+      "date_created": "2024-06-02",
+      "content": "다양한 중식을 맛볼 수 있는 고급 레스토랑.",
+      "category": "중식",
+      "rating": 4.6,
+      "likes": 22,
+      "path": "",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "중식이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "홍대 라멘",
+      "date_created": "2024-06-02",
+      "content": "진한 육수와 쫄깃한 면발이 일품인 라멘집.",
+      "category": "일식",
+      "rating": 4.7,
+      "likes": 20,
+      "path": "/src/shared/assets/japn/5.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "라멘 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "서울 파스타",
+      "date_created": "2024-06-02",
+      "content": "다양한 파스타를 맛볼 수 있는 이탈리안 레스토랑.",
+      "category": "양식",
+      "rating": 4.8,
+      "likes": 24,
+      "path": "/src/shared/assets/itali/4.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "파스타가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "을지로 카페",
+      "date_created": "2024-06-02",
+      "content": "분위기 좋은 카페에서 여유로운 시간.",
+      "category": "카페",
+      "rating": 4.5,
+      "likes": 17,
+      "path": "/src/shared/assets/cafe/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "커피가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "강남 타코야키",
+      "date_created": "2024-06-02",
+      "content": "일본식 타코야키를 강남에서 맛볼 수 있는 곳.",
+      "category": "일식",
+      "rating": 4.4,
+      "likes": 16,
+      "path": "/src/shared/assets/japn/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "타코야키 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "명동 파스타",
+      "date_created": "2024-06-02",
+      "content": "다양한 파스타를 맛볼 수 있는 이탈리안 레스토랑.",
+      "category": "양식",
+      "rating": 4.7,
+      "likes": 19,
+      "path": "/src/shared/assets/itali/5.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "파스타가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "홍대 초밥",
+      "date_created": "2024-06-02",
+      "content": "신선한 초밥과 다양한 회를 즐길 수 있는 곳.",
+      "category": "일식",
+      "rating": 4.8,
+      "likes": 23,
+      "path": "/src/shared/assets/japn/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "초밥이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "서울 김밥천국",
+      "date_created": "2024-06-02",
+      "content": "다양한 김밥과 분식을 즐길 수 있는 곳.",
+      "category": "한식",
+      "rating": 4.5,
+      "likes": 19,
+      "path": "/src/shared/assets/korea/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "김밥이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "강남 디저트 카페",
+      "date_created": "2024-06-02",
+      "content": "다양한 디저트를 즐길 수 있는 카페.",
+      "category": "카페",
+      "rating": 4.6,
+      "likes": 20,
+      "path": "/src/shared/assets/cafe/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "디저트가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "을지로 라멘",
+      "date_created": "2024-06-02",
+      "content": "진한 육수와 쫄깃한 면발이 일품인 라멘집.",
+      "category": "일식",
+      "rating": 4.8,
+      "likes": 23,
+      "path": "/src/shared/assets/japn/3.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "라멘 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "홍대 베이커리",
+      "date_created": "2024-06-02",
+      "content": "다양한 빵과 케이크를 즐길 수 있는 베이커리.",
+      "category": "디저트",
+      "rating": 4.7,
+      "likes": 20,
+      "path": "/src/shared/assets/dessert/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "빵이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "서울 떡볶이",
+      "date_created": "2024-06-02",
+      "content": "매콤한 떡볶이가 일품인 분식집.",
+      "category": "한식",
+      "rating": 4.5,
+      "likes": 19,
+      "path": "/src/shared/assets/korea/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "떡볶이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "강남 피자",
+      "date_created": "2024-06-02",
+      "content": "다양한 토핑의 피자를 즐길 수 있는 곳.",
+      "category": "양식",
+      "rating": 4.6,
+      "likes": 22,
+      "path": "/src/shared/assets/itali/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "피자가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "을지로 중식당",
+      "date_created": "2024-06-02",
+      "content": "다양한 중식을 맛볼 수 있는 고급 레스토랑.",
+      "category": "중식",
+      "rating": 4.7,
+      "likes": 21,
+      "path": "/src/shared/assets/japn/4.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "중식이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "홍대 파스타",
+      "date_created": "2024-06-02",
+      "content": "다양한 파스타를 맛볼 수 있는 이탈리안 레스토랑.",
+      "category": "양식",
+      "rating": 4.8,
+      "likes": 24,
+      "path": "/src/shared/assets/itali/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "파스타가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "title": "서울 브런치 카페",
+      "date_created": "2024-06-02",
+      "content": "브런치를 즐길 수 있는 멋진 카페.",
+      "category": "카페",
+      "rating": 4.6,
+      "likes": 18,
+      "path": "/src/shared/assets/cafe/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "브런치가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "강남 타코야키",
+      "date_created": "2024-06-02",
+      "content": "일본식 타코야키를 강남에서 맛볼 수 있는 곳.",
+      "category": "일식",
+      "rating": 4.5,
+      "likes": 19,
+      "path": "/src/shared/assets/japn/4.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "타코야키 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "명동 초밥",
+      "date_created": "2024-06-02",
+      "content": "신선한 초밥과 다양한 회를 즐길 수 있는 곳.",
+      "category": "일식",
+      "rating": 4.8,
+      "likes": 23,
+      "path": "/src/shared/assets/japn/5.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "초밥이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "서울 국밥",
+      "date_created": "2024-06-02",
+      "content": "진한 육수와 부드러운 고기가 일품인 국밥집.",
+      "category": "한식",
+      "rating": 4.6,
+      "likes": 22,
+      "path": "/src/shared/assets/korea/3.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "국밥이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "홍대 타이 레스토랑",
+      "date_created": "2024-06-02",
+      "content": "정통 타이 요리를 즐길 수 있는 곳.",
+      "category": "태국식",
+      "rating": 4.7,
+      "likes": 18,
+      "path": "/src/shared/assets/korea/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "타이 음식이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "title": "이태원 스테이크",
+      "date_created": "2024-06-02",
+      "content": "고급스러운 스테이크를 즐길 수 있는 레스토랑.",
+      "category": "양식",
+      "rating": 4.9,
+      "likes": 25,
+      "path": "/src/shared/assets/itali/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "스테이크가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "title": "강남 닭갈비",
+      "date_created": "2024-06-02",
+      "content": "매콤하고 달콤한 닭갈비가 일품인 맛집.",
+      "category": "한식",
+      "rating": 4.6,
+      "likes": 22,
+      "path": "/src/shared/assets/korea/5.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "닭갈비 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "title": "잠실 피자",
+      "date_created": "2024-06-02",
+      "content": "다양한 토핑의 피자를 즐길 수 있는 곳.",
+      "category": "양식",
+      "rating": 4.5,
+      "likes": 19,
+      "path": "/src/shared/assets/itali/3.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "피자가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "title": "이태원 중식당",
+      "date_created": "2024-06-02",
+      "content": "정통 중식을 맛볼 수 있는 이태원의 맛집.",
+      "category": "중식",
+      "rating": 4.7,
+      "likes": 21,
+      "path": "/src/shared/assets/dessert/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "중식이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "title": "명동 김밥천국",
+      "date_created": "2024-06-02",
+      "content": "다양한 김밥과 분식을 즐길 수 있는 곳.",
+      "category": "한식",
+      "rating": 4.3,
+      "likes": 15,
+      "path": "/src/shared/assets/korea/1.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "김밥이 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "title": "강남 브런치 카페",
+      "date_created": "2024-06-02",
+      "content": "브런치를 즐길 수 있는 멋진 카페.",
+      "category": "카페",
+      "rating": 4.6,
+      "likes": 18,
+      "path": "/src/shared/assets/cafe/2.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "like": 0,
+          "text": "브런치가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "title": "홍대 피자",
+      "date_created": "2024-06-02",
+      "content": "다양한 토핑의 피자를 즐길 수 있는 곳.",
+      "category": "양식",
+      "rating": 4.7,
+      "likes": 20,
+      "path": "/src/shared/assets/itali/4.jpg",
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "text": "피자가 정말 맛있어요.",
+          "uuid": "1"
+        }
+      ]
+    }
+  ]
+}

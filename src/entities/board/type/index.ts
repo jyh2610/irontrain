@@ -1,8 +1,31 @@
 // src/features/board/types/index.ts
-export interface BoardState {
+export interface BoardState extends BoardFilterState {
   search: string;
+}
+
+export interface BoardFilterState {
   review: string[];
   rating: string[];
   category: string[];
   type: string[];
+}
+
+export interface Comment {
+  id: number;
+  like: number;
+  text: string;
+  uuid: string;
+}
+
+export interface IGetReview {
+  id: number;
+  title: string;
+  date_created: string;
+  content: string;
+  category: string;
+  rating: number;
+  likes: number;
+  path: string;
+  uuid: string;
+  comments: Comment[];
 }

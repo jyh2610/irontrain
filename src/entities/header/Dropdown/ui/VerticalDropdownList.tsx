@@ -1,28 +1,28 @@
-import React, { Dispatch, useEffect, useState } from "react";
+import React, { Dispatch } from "react";
 import { BasicDropListContainer, BasicDropListBox, BasicListBox } from "./styles";
+import { useBoardProvider } from "@src/entities";
+import { BoardState } from "@src/entities/board/type";
+import { mappingTitle } from "../constant";
 
 interface Props {
+  title: string;
   list: string[];
-  onSelectionChange: (selectedItems: string[]) => void;
   setIsOpen: Dispatch<React.SetStateAction<boolean>>;
 }
 
-const VerticalDropdownList = ({ list, onSelectionChange, setIsOpen }: Props) => {
-  const [selectedItems, setSelectedItems] = useState<string[]>([]);
-  console.log(selectedItems);
+const VerticalDropdownList = ({ title, list, setIsOpen }: Props) => {
+  const { setFilter } = useBoardProvider();
+  const mappingKey: keyof BoardState = mappingTitle[title];
 
   const selectItem = (item: string) => {
-    if (selectedItems.includes(item)) {
-      setSelectedItems((prev) => prev.filter((i) => i !== item));
-    } else {
-      setSelectedItems((prev) => [...prev, item]);
-    }
+    setFilter((prev) => {
+      return {
+        ...prev,
+        [mappingKey]: [item],
+      };
+    });
     setIsOpen(false);
   };
-
-  useEffect(() => {
-    onSelectionChange(selectedItems);
-  }, [selectedItems]);
 
   return (
     <BasicDropListContainer>

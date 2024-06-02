@@ -1,18 +1,13 @@
 import React, { createContext, ReactNode, useContext, useState, useMemo } from "react";
-import { BoardState } from "../type";
+import { BoardState, IGetReview } from "../type";
+import { initialState } from "../constant";
+import { useGetStoreList } from "../api/storeLists";
 
 interface BoardManageContext {
   filter: BoardState;
   setFilter: React.Dispatch<React.SetStateAction<BoardState>>;
+  reviewData: { data: IGetReview[]; totalCount: number } | undefined;
 }
-
-const initialState: BoardState = {
-  search: "",
-  review: [],
-  rating: [],
-  category: [],
-  type: [],
-};
 
 const BoardContext = createContext<BoardManageContext | null>(null);
 
@@ -26,13 +21,15 @@ export const useBoardProvider = () => {
 
 export const BoardProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [filter, setFilter] = useState<BoardState>(initialState);
-  console.log(filter);
+  const { data: reviewData } = useGetStoreList(1, 12);
+
   const memorizedValue = useMemo(
     () => ({
       filter,
       setFilter,
+      reviewData,
     }),
-    [filter]
+    [filter, reviewData]
   );
 
   return <BoardContext.Provider value={memorizedValue}>{children}</BoardContext.Provider>;
