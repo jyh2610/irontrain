@@ -1,18 +1,23 @@
-import { useState } from "react";
+import { Dispatch, useState } from "react";
 import { initialState } from "../board/constant";
 import { useBoardProvider } from "../board/context/FilterProvider";
 import { Dropdown } from "./Dropdown/Dropdown";
 import { SearchBar } from "./searchBar/SearchBar";
-import { category, starScore, reviewKind } from "@src/shared/index";
+import { category, starScore, reviewKind, sessionManage } from "@src/shared/index";
 import { IoIosList, IoMdGrid } from "react-icons/io";
 import { HeaderContainer, FilterContainer, RotatedResetIcon, ViewSelectContainer, ViewIconWrapper } from "./styles";
 
-export const Header = () => {
+interface Props {
+  selectedView: string;
+  setSelectedView: Dispatch<React.SetStateAction<string>>;
+}
+export const Header = ({ selectedView, setSelectedView }: Props) => {
   const { setFilter } = useBoardProvider();
-  const [selectedView, setSelectedView] = useState<"list" | "grid">("grid");
+  const { saveCurrentViewTypeSessionStorage } = sessionManage();
 
   const handleViewChange = (view: "list" | "grid") => {
     setSelectedView(view);
+    saveCurrentViewTypeSessionStorage(view);
   };
 
   return (

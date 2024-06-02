@@ -25,6 +25,7 @@ export const useBoardProvider = () => {
 export const BoardProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [filter, setFilter] = useState<BoardState>(initialState);
   const [page, setPage] = useState(1);
+
   const { data: reviewData } = useGetStoreList(page, 12);
   const { currentPage } = sessionManage();
 
