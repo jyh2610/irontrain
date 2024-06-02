@@ -32,3 +32,10 @@ export const IconBox = styled.div`
     background-color: var(--color-point);
   }
 `;
+
+export const PageCount = styled.p`
+  margin-left: 0.8rem;
+  display: flex;
+  align-items: center;
+  color: var(--color-font-gray);
+`;

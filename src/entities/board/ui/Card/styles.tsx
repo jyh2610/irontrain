@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
   width: 20rem;
-  border: 2px solid var(--color-border-gray);
+  border: 3px solid var(--color-border-gray);
   border-radius: 8px;
   overflow: hidden;
+
+  &:hover {
+    border: 3px solid var(--color-point);
+    cursor: pointer;
+  }
 `;
 
 export const ImgBox = styled.div`
@@ -28,4 +33,14 @@ export const CardInfoBox = styled.div`
 export const RatingBox = styled.div`
   display: flex;
   gap: 0.1rem;
+`;
+
+export const TagBox = styled.p`
+  display: inline-flex;
+  span {
+    text-align: center;
+    padding: 0.3rem 0.4rem;
+    background-color: var(--color-point);
+    border-radius: 6px;
+  }
 `;

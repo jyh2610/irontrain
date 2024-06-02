@@ -11,7 +11,6 @@ ${reset}
     box-sizing: border-box;
   }
   body {
-    min-width: 102.5rem;
   }
   input, textarea { 
     -moz-user-select: auto;

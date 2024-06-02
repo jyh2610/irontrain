@@ -1,6 +1,6 @@
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { PaginationContainer, PageButton, IconBox } from "./styles";
+import { PaginationContainer, PageButton, IconBox, PageCount } from "./styles";
 import { sessionManage } from "../utills/sessionManage";
 
 interface Props {
@@ -8,12 +8,15 @@ interface Props {
   currentPage: number;
   onPageChange: (page: number) => void;
 }
+const range = 5;
 
 export const PageNationBar = ({ totalCount, currentPage, onPageChange }: Props) => {
   if (!totalCount) return null;
   const { saveCurrentPageSessionStorage } = sessionManage();
   const totalPages = Math.ceil(totalCount / 12);
-  const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
+
+  let start = Math.max(1, Math.ceil(currentPage / range) * range - range + 1);
+  let end = Math.min(totalPages, start + range - 1);
 
   const movePage = (page: number) => {
     if (totalPages < page || page < 1) return;
@@ -22,10 +25,6 @@ export const PageNationBar = ({ totalCount, currentPage, onPageChange }: Props) 
   };
 
   const renderPageNumbers = () => {
-    const range = 5;
-    let start = Math.max(1, Math.ceil(currentPage / range) * range - range + 1);
-    let end = Math.min(totalPages, start + range - 1);
-
     // 현재 페이지가 범위보다 큰 경우 다음 페이지로 넘어갈 때 시작 숫자를 조정합니다.
     if (currentPage > range) {
       start = Math.max(1, Math.ceil(currentPage / range) * range - range + 1);
@@ -54,6 +53,7 @@ export const PageNationBar = ({ totalCount, currentPage, onPageChange }: Props) 
       <IconBox onClick={() => movePage(totalPages)}>
         <MdKeyboardDoubleArrowRight size={20} />
       </IconBox>
+      <PageCount>{`${start}-${end} of ${totalPages}`}</PageCount>
     </PaginationContainer>
   );
 };

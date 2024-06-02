@@ -6,3 +6,8 @@ export const BoardContainer = styled.div`
   grid-gap: 2rem;
   padding: 2rem;
 `;
+
+export const BoardListContainer = styled.div`
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+`;
