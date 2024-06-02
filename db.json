@@ -199,7 +199,7 @@
       "category": "태국식",
       "rating": 4.7,
       "likes": 18,
-      "path": "/src/shared/assets/etc/1.jpg",
+      "path": "/src/shared/assets/etc/1.jpeg",
       "uuid": "",
       "comments": [
         {
@@ -275,7 +275,7 @@
       "category": "중식",
       "rating": 4.7,
       "likes": 21,
-      "path": "/src/shared/assets/etc/1.jpg",
+      "path": "/src/shared/assets/etc/1.jpeg",
       "uuid": "",
       "comments": [
         {
@@ -370,7 +370,7 @@
       "category": "한식",
       "rating": 4.5,
       "likes": 19,
-      "path": "/src/shared/assets/korea/1.jpg/src/shared/assets/korea/5.jpg",
+      "path": "/src/shared/assets/korea/1.jpg",
       "uuid": "",
       "comments": [
         {
@@ -427,7 +427,7 @@
       "category": "멕시코식",
       "rating": 4.8,
       "likes": 23,
-      "path": "",
+      "path": "/src/shared/assets/etc/1.jpeg",
       "uuid": "",
       "comments": [
         {
@@ -446,7 +446,7 @@
       "category": "중식",
       "rating": 4.6,
       "likes": 22,
-      "path": "",
+      "path": "/src/shared/assets/korea/2.jpg",
       "uuid": "",
       "comments": [
         {
@@ -655,7 +655,7 @@
       "category": "한식",
       "rating": 4.5,
       "likes": 19,
-      "path": "/src/shared/assets/korea/2.jpg",
+      "path": "/src/shared/assets/itali/1.jpg",
       "uuid": "",
       "comments": [
         {

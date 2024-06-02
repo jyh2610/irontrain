@@ -22,5 +22,6 @@ export const BaseLayout = () => {
 };
 
 const ReviewContainer = styled.div`
+  width: viewport;
   margin: 0 auto;
 `;

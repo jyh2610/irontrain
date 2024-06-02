@@ -7,22 +7,23 @@ interface Props {
 }
 
 export const Card = ({ review }: Props) => {
-  const renderStars = () => {
-    const stars = [];
-    const fullStars = Math.floor(review.rating);
-    const halfStar = review.rating % 1 >= 0.5;
+  const fullStars = Math.floor(review.rating);
+  const halfStar = review.rating % 1 >= 0.5;
 
-    for (let i = 0; i < 5; i++) {
-      if (i < fullStars) {
-        stars.push(<IoIosStar key={i} size={18} color="var(--color-point)" />);
-      } else if (i === fullStars && halfStar) {
-        stars.push(<IoIosStarHalf key={i} size={18} color="var(--color-point)" />);
+  const renderStars = () => {
+    const stars = Array.from({ length: 5 }).map((_, index) => {
+      if (index < fullStars) {
+        return <IoIosStar key={index} size={18} color="var(--color-point)" />;
+      } else if (index === fullStars && halfStar) {
+        return <IoIosStarHalf key={index} size={18} color="var(--color-point)" />;
       } else {
-        stars.push(<IoIosStarOutline key={i} size={18} color="gray" />);
+        return <IoIosStarOutline key={index} size={18} color="gray" />;
       }
-    }
+    });
+
     return stars;
   };
+
   const truncateText = (text: string) => {
     if (text.length > 15) {
       return text.substring(0, 20) + "...";

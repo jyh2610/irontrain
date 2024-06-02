@@ -11,7 +11,7 @@ ${reset}
     box-sizing: border-box;
   }
   body {
-    max-width: 102.5rem;
+    min-width: 102.5rem;
   }
   input, textarea { 
     -moz-user-select: auto;
