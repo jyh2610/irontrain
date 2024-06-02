@@ -26,7 +26,7 @@ export const useBoardProvider = () => {
 
 export const BoardProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [filter, setFilter] = useState<BoardState>(initialState);
-
+  console.log(filter);
   const memorizedValue = useMemo(
     () => ({
       filter,

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { BiChevronDown } from "react-icons/bi";
 import { DropdownContainer, DropdownBox } from "./style";
-import { DropdownList } from "./ui/DropdownList";
 import { useBoardProvider } from "@src/entities";
 import { useClickOutside } from "@src/shared";
+import VerticalDropdownList from "./ui/VerticalDropdownList";
+import HorizontalDropdownList from "./ui/HorizontalDropdownList";
 
 interface Props {
   title: string;
@@ -17,7 +18,9 @@ export const Dropdown = ({ title, vertical, dropList }: Props) => {
   const dropdownRef = useClickOutside(() => setIsOpen(false));
 
   const handleSelection = (selectedItems: string[]) => {
-    if (title === "리뷰종류") {
+    if (title === "리뷰 종류") {
+      console.log(selectedItems, title);
+
       setFilter((prev) => ({ ...prev, review: selectedItems }));
     }
     if (title === "별점") {
@@ -37,7 +40,13 @@ export const Dropdown = ({ title, vertical, dropList }: Props) => {
         <BiChevronDown size={24} />
       </DropdownBox>
       {isOpen && (
-        <DropdownList onSelectionChange={handleSelection} vertical={vertical} setIsOpen={setIsOpen} list={dropList} />
+        <>
+          {vertical ? (
+            <VerticalDropdownList setIsOpen={setIsOpen} onSelectionChange={handleSelection} list={dropList} />
+          ) : (
+            <HorizontalDropdownList list={dropList} setIsOpen={setIsOpen} onSelectionChange={handleSelection} />
+          )}
+        </>
       )}
     </DropdownContainer>
   );
