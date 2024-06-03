@@ -1,12 +1,18 @@
-import { useParams } from "react-router-dom";
+import { IGetReview } from "@src/entities/board/type";
+import { useLocation } from "react-router-dom";
+import { DetailContainer, ImgBox } from "./styles";
+import { DetailList } from "@src/entities/detail";
 
 export const Detail = () => {
-  const { id } = useParams();
+  const { state } = useLocation();
+  const review: IGetReview = state?.review;
 
   return (
-    <div>
-      <h1>Detail Page</h1>
-      <p>Review ID: {id}</p>
-    </div>
+    <DetailContainer>
+      <ImgBox>
+        <img src={review.path} alt="리뷰이미지" />
+      </ImgBox>
+      <DetailList />
+    </DetailContainer>
   );
 };

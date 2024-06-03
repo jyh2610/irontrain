@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import GlobalStyles from "./GlobalStyles";
 import styled from "styled-components";
-import { BoardProvider } from "@src/entities";
+import { BoardProvider, DetailProvider, Navigate } from "@src/entities";
 import QueryWrapper from "../providers/QueryWrapper";
 
 export const BaseLayout = () => {
@@ -10,17 +10,18 @@ export const BaseLayout = () => {
       <GlobalStyles />
       <QueryWrapper>
         <ReviewContainer>
-          <main>
+          <DetailProvider>
             <BoardProvider>
+              <Navigate />
               <Outlet />
             </BoardProvider>
-          </main>
+          </DetailProvider>
         </ReviewContainer>
       </QueryWrapper>
     </>
   );
 };
 
-const ReviewContainer = styled.div`
+const ReviewContainer = styled.main`
   margin: 0 auto;
 `;

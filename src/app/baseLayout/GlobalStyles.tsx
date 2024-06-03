@@ -10,8 +10,7 @@ ${reset}
   * {
     box-sizing: border-box;
   }
-  body {
-  }
+  
   input, textarea { 
     -moz-user-select: auto;
     -webkit-user-select: auto;

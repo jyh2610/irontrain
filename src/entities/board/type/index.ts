@@ -12,6 +12,7 @@ export interface BoardFilterState {
 
 export interface Comment {
   id: number;
+  rating: number;
   like: number;
   text: string;
   uuid: string;

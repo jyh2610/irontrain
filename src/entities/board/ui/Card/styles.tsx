@@ -44,3 +44,14 @@ export const TagBox = styled.p`
     border-radius: 6px;
   }
 `;
+
+export const InfoTopBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const LikeBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+`;
