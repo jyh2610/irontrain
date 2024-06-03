@@ -25,7 +25,6 @@ export const PageNationBar = ({ totalCount, currentPage, onPageChange }: Props) 
   };
 
   const renderPageNumbers = () => {
-    // 현재 페이지가 범위보다 큰 경우 다음 페이지로 넘어갈 때 시작 숫자를 조정합니다.
     if (currentPage > range) {
       start = Math.max(1, Math.ceil(currentPage / range) * range - range + 1);
       end = Math.min(totalPages, start + range - 1);

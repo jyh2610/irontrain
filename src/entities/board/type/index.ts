@@ -4,7 +4,7 @@ export interface BoardState extends BoardFilterState {
 }
 
 export interface BoardFilterState {
-  review: string[];
+  date_created: string[];
   rating: string[];
   category: string[];
   type: string[];
