@@ -6,3 +6,4 @@ export { useClickOutside } from "./hooks/useClickOutSide";
 //utills
 export { sessionManage } from "./utills/sessionManage";
 export { truncateText } from "./utills/truncateText";
+export { generateUUID } from "./utills/generateUUID";
