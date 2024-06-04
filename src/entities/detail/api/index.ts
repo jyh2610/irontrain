@@ -5,16 +5,15 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 export const getReviewDetail = async (id: string) => {
   const res = await request<IGetReview>({
     method: "GET",
-    url: `comments/${id}`,
+    url: `reviews/${id}`,
   });
   return res.data;
 };
 
 export const useGetReviewDetail = (id: string) => {
-  return useQuery<IGetReview, Error>({
-    queryKey: ["review", id],
+  return useQuery<IGetReview>({
+    queryKey: ["review"],
     queryFn: () => getReviewDetail(id),
-    enabled: !!id,
   });
 };
 
@@ -25,13 +24,13 @@ const PutLike = async (review: IGetReview) => {
     data: review,
   });
 };
+
 export const PutLikeComment = async (review: IGetReview | undefined, uuid: string, commentId: string) => {
   try {
     if (review) {
       const comment = review.comments.find((item) => item.id === commentId);
       if (!comment) {
         console.error("Comment not found");
-        return { success: false, message: "Comment not found" };
       }
 
       if (comment.likedUuids && comment.likedUuids.includes(uuid)) {
@@ -49,9 +48,8 @@ export const PutLikeComment = async (review: IGetReview | undefined, uuid: strin
 
       await PutLike(review);
     }
-    return { success: true, message: "Operation completed successfully" };
   } catch (error) {
-    return { success: false, message: "An error occurred while updating the like status" };
+    console.log(error);
   }
 };
 
@@ -76,31 +74,23 @@ export const PutLikeReview = async (review: IGetReview, uuid: string) => {
   }
 };
 
-// export const usePutLikeReview = () => {
-//   const queryClient = useQueryClient();
-//   return useMutation(PutLikeReview, {
-//     onSuccess: () => {
-//       queryClient.invalidateQueries(["review"]);
-//     },
-//   });
-// };
-// export const usePutLikeReview = () => {
-//   return useMutation<{ success: boolean; message: string }, Error, { review: IGetReview; uuid: string }>(
-//     PutLikeReview,
-//     {
-//       onSuccess: () => {
-//         queryClient.invalidateQueries("review");
-//       },
-//     }
-//   );
-// };
-// export const usePutLikeComment = () => {
-//   return useMutation(PutLikeComment, {
-//     onSuccess: () => {
-//       queryClient.invalidateQueries(["review"]);
-//     },
-//   });
-// };
+export const usePutLikeReview = () => {
+  const queryClient = useQueryClient();
+  return useMutation((data: string) => PutLike(data), {
+    onSuccess: (id: string) => {
+      queryClient.invalidateQueries(["review", `${id}`]);
+    },
+  });
+};
+
+export const usePutLikeComment = () => {
+  const queryClient = useQueryClient();
+  return useMutation(PutLikeComment, {
+    onSuccess: () => {
+      queryClient.invalidateQueries(["review"]);
+    },
+  });
+};
 export interface IPostComment {
   rating: number;
   text: string;

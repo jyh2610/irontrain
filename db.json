@@ -1,16 +1,4 @@
 {
-  "comments": [
-    {
-      "id": 1,
-      "reviewId": 1,
-      "rating": 4,
-      "likes": 25,
-      "like": true,
-      "text": "정말 맛있어요! 추천합니다.",
-      "uuid": "1",
-      "likedUuids": []
-    }
-  ],
   "reviews": [
     {
       "id": 1,
@@ -20,9 +8,22 @@
       "category": "일식",
       "path": "/src/shared/assets/japn/5.jpg",
       "rating": 1,
-      "likes": 26,
+      "likes": 25,
       "uuid": "",
-      "likedUuids": ["e0a51016-8ac0-47b8-84c3-9219f3beb7d3"],
+      "likedUuids": [],
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "likes": 25,
+          "like": 2,
+          "text": "정말 맛있어요! 추천합니다.",
+          "uuid": "1",
+          "likedUuids": [
+            "e0a51016-8ac0-47b8-84c3-9219f3beb7d3"
+          ]
+        }
+      ],
       "averageRating": 2.5
     },
     {
@@ -33,9 +34,20 @@
       "category": "한식",
       "rating": 4.5,
       "path": "/src/shared/assets/korea/1.jpg",
-      "likedUuids": ["e0a51016-8ac0-47b8-84c3-9219f3beb7d3"],
+      "likedUuids": [
+        "e0a51016-8ac0-47b8-84c3-9219f3beb7d3"
+      ],
       "uuid": "",
-
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": 1,
+          "text": "이 국밥 정말 최고에요!",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ],
       "averageRating": 4.25,
       "likes": 0
     },
@@ -48,7 +60,17 @@
       "rating": 4.3,
       "path": "/src/shared/assets/itali/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": 1,
+          "text": "버거가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 4,
@@ -59,7 +81,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/cafe/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "차와 디저트가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 5,
@@ -70,7 +102,16 @@
       "rating": 4.4,
       "path": "/src/shared/assets/japn/2.jpg",
       "uuid": "",
-
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "타코야키가 정말 맛있어요!",
+          "uuid": "1"
+        }
+      ],
+      "averageRating": 4.2,
       "likes": null,
       "likedUuids": []
     },
@@ -83,7 +124,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/korea/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "순두부 정말 맛있어요!",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 7,
@@ -94,7 +145,17 @@
       "rating": 4.5,
       "path": "/src/shared/assets/dessert/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "찹쌀떡이 쫄깃하고 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 8,
@@ -105,7 +166,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/itali/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "파스타가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 9,
@@ -116,7 +187,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/cafe/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "디저트가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 10,
@@ -127,7 +208,17 @@
       "rating": 4.8,
       "path": "/src/shared/assets/korea/3.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "갈비 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 11,
@@ -138,7 +229,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/etc/1.jpeg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "타이 음식이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 12,
@@ -149,7 +250,17 @@
       "rating": 4.9,
       "path": "/src/shared/assets/itali/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "스테이크가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 13,
@@ -160,7 +271,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/korea/4.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "닭갈비 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 14,
@@ -171,7 +292,17 @@
       "rating": 4.5,
       "path": "/src/shared/assets/itali/3.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "피자가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 15,
@@ -182,7 +313,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/etc/1.jpeg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "중식이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 16,
@@ -193,7 +334,17 @@
       "rating": 4.3,
       "path": "/src/shared/assets/korea/4.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "김밥이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 17,
@@ -204,7 +355,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/cafe/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "브런치가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 18,
@@ -215,7 +376,17 @@
       "rating": 4.8,
       "path": "/src/shared/assets/japn/3.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "라멘 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 19,
@@ -226,7 +397,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/dessert/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "빵이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 20,
@@ -237,7 +418,17 @@
       "rating": 4.5,
       "path": "/src/shared/assets/korea/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "떡볶이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 21,
@@ -248,7 +439,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/cafe/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "커피가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 22,
@@ -259,7 +460,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/japn/4.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "돈가스 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 23,
@@ -270,7 +481,17 @@
       "rating": 4.8,
       "path": "/src/shared/assets/etc/1.jpeg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "타코가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 24,
@@ -281,7 +502,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/korea/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "중식이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 25,
@@ -292,7 +523,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/japn/5.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "라멘 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 26,
@@ -303,7 +544,17 @@
       "rating": 4.8,
       "path": "/src/shared/assets/itali/4.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "파스타가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 27,
@@ -314,7 +565,17 @@
       "rating": 4.5,
       "path": "/src/shared/assets/cafe/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "커피가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 28,
@@ -325,7 +586,17 @@
       "rating": 4.4,
       "path": "/src/shared/assets/japn/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "타코야키 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 29,
@@ -336,7 +607,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/itali/5.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "파스타가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 30,
@@ -347,7 +628,17 @@
       "rating": 4.8,
       "path": "/src/shared/assets/japn/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "초밥이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 31,
@@ -358,7 +649,17 @@
       "rating": 4.5,
       "path": "/src/shared/assets/korea/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "김밥이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 32,
@@ -369,7 +670,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/cafe/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "디저트가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 33,
@@ -380,7 +691,17 @@
       "rating": 4.8,
       "path": "/src/shared/assets/japn/3.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "라멘 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 34,
@@ -391,7 +712,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/dessert/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "빵이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 35,
@@ -402,7 +733,17 @@
       "rating": 4.5,
       "path": "/src/shared/assets/itali/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "떡볶이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 36,
@@ -413,7 +754,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/itali/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "피자가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 37,
@@ -424,7 +775,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/japn/4.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "중식이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 38,
@@ -435,7 +796,17 @@
       "rating": 4.8,
       "path": "/src/shared/assets/itali/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "파스타가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 39,
@@ -446,7 +817,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/cafe/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "브런치가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 40,
@@ -457,7 +838,17 @@
       "rating": 4.5,
       "path": "/src/shared/assets/japn/4.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "타코야키 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 41,
@@ -468,7 +859,17 @@
       "rating": 4.8,
       "path": "/src/shared/assets/japn/5.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "초밥이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 42,
@@ -479,7 +880,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/korea/3.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "국밥이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 43,
@@ -490,7 +901,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/korea/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "타이 음식이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 44,
@@ -501,7 +922,17 @@
       "rating": 4.9,
       "path": "/src/shared/assets/itali/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "스테이크가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 45,
@@ -512,7 +943,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/korea/5.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "닭갈비 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 46,
@@ -523,7 +964,17 @@
       "rating": 4.5,
       "path": "/src/shared/assets/itali/3.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "피자가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 47,
@@ -534,7 +985,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/dessert/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "중식이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 48,
@@ -545,7 +1006,17 @@
       "rating": 4.3,
       "path": "/src/shared/assets/korea/1.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "김밥이 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 49,
@@ -556,7 +1027,17 @@
       "rating": 4.6,
       "path": "/src/shared/assets/cafe/2.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "브런치가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     },
     {
       "id": 50,
@@ -567,7 +1048,17 @@
       "rating": 4.7,
       "path": "/src/shared/assets/itali/4.jpg",
       "likedUuids": [],
-      "uuid": ""
+      "uuid": "",
+      "comments": [
+        {
+          "id": 1,
+          "rating": 4,
+          "like": true,
+          "text": "피자가 정말 맛있어요.",
+          "uuid": "1",
+          "likedUuids": []
+        }
+      ]
     }
   ]
 }
