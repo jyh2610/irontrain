@@ -4,7 +4,6 @@ import { ImgBox, ListViewContainer, InfoBox, StarAndDateBox, TagBox } from "./st
 import { renderStars } from "../../../../shared/utills/renderStars";
 import { truncateText } from "@src/shared";
 import { FaRegThumbsUp } from "react-icons/fa";
-import { calculateLikes } from "../../../../shared/utills/calculateAverageRating";
 
 interface Props {
   review: IGetReviewWithAverages;
@@ -33,7 +32,7 @@ export const ListView = ({ review }: Props) => {
           <div>{renderStars({ fullStars, halfStar })}</div>
           <div>
             <FaRegThumbsUp />
-            <span>{calculateLikes(review.comments)}</span>
+            <span>{review.likedUuids.length}</span>
           </div>
           <p>{review.date_created}</p>
         </StarAndDateBox>

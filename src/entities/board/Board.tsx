@@ -3,6 +3,7 @@ import { Card } from "./ui/Card/Card";
 import { ListView } from "./ui/List/ListView";
 import { useBoardProvider } from "./context/FilterProvider";
 import { BoardContainer, BoardListContainer } from "./styles";
+import { storageManage } from "@src/shared";
 
 interface Props {
   selectedView: string;
@@ -10,7 +11,7 @@ interface Props {
 
 export const Board = ({ selectedView }: Props) => {
   const { reviewData, page, setPage } = useBoardProvider();
-
+  const { saveCurrentPageSessionStorage } = storageManage();
   return (
     <div>
       {selectedView === "grid" ? (
@@ -20,7 +21,12 @@ export const Board = ({ selectedView }: Props) => {
           {reviewData?.data.map((review) => <ListView key={review.id} review={review} />)}
         </BoardListContainer>
       )}
-      <PageNationBar totalCount={reviewData?.totalCount} currentPage={page} onPageChange={setPage} />
+      <PageNationBar
+        saveSession={saveCurrentPageSessionStorage}
+        totalCount={reviewData?.totalCount}
+        currentPage={page}
+        onPageChange={setPage}
+      />
     </div>
   );
 };

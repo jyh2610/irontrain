@@ -1,6 +1,6 @@
 import { IGetReviewWithAverages } from "../../type";
 import { useNavigate } from "react-router-dom";
-import { calculateLikes, renderStars, truncateText } from "@src/shared";
+import { renderStars, truncateText } from "@src/shared";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { CardContainer, ImgBox, CardInfoBox, RatingBox, TagBox, InfoTopBox, LikeBox } from "./styles";
 
@@ -31,7 +31,7 @@ export const Card = ({ review }: Props) => {
           <RatingBox>{renderStars({ fullStars, halfStar })}</RatingBox>
           <LikeBox>
             <FaRegThumbsUp />
-            <p>{calculateLikes(review.comments)}</p>
+            <p>{review.likedUuids.length}</p>
           </LikeBox>
         </InfoTopBox>
         <p>{truncateText(review.content)}</p>

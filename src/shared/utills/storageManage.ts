@@ -1,6 +1,7 @@
 const storageKeys = {
   currentPage: "currentPage",
   currentViewType: "currentViewType",
+  currentCommentPage: "currentComentPage",
   UUID: "UUID",
 } as const;
 
@@ -8,6 +9,7 @@ export const storageManage = () => {
   const currentSession = {
     currentPage: sessionStorage.getItem(storageKeys.currentPage),
     currentViewType: sessionStorage.getItem(storageKeys.currentViewType),
+    currentCommentPage: sessionStorage.getItem(storageKeys.currentCommentPage),
   };
   const currentLocal = {
     UUID: localStorage.getItem(storageKeys.UUID),
@@ -15,6 +17,10 @@ export const storageManage = () => {
 
   const { currentPage, currentViewType } = currentSession;
   const { UUID } = currentLocal;
+
+  const saveCurrentCommentPageSessionStorage = (page: number) => {
+    sessionStorage.setItem(storageKeys.currentCommentPage, page + "");
+  };
 
   const saveCurrentPageSessionStorage = (page: number) => {
     sessionStorage.setItem(storageKeys.currentPage, page + "");
@@ -36,6 +42,7 @@ export const storageManage = () => {
   return {
     currentPage,
     currentViewType,
+    saveCurrentCommentPageSessionStorage,
     UUID,
     saveCurrentPageSessionStorage,
     saveCurrentViewTypeSessionStorage,

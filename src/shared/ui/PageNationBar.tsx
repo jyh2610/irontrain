@@ -7,12 +7,12 @@ interface Props {
   totalCount: number | undefined;
   currentPage: number;
   onPageChange: (page: number) => void;
+  saveSession: (page: number) => void;
 }
 const range = 5;
 
-export const PageNationBar = ({ totalCount, currentPage, onPageChange }: Props) => {
+export const PageNationBar = ({ saveSession, totalCount, currentPage, onPageChange }: Props) => {
   if (!totalCount) return null;
-  const { saveCurrentPageSessionStorage } = storageManage();
   const totalPages = Math.ceil(totalCount / 12);
 
   let start = Math.max(1, Math.ceil(currentPage / range) * range - range + 1);
@@ -21,7 +21,7 @@ export const PageNationBar = ({ totalCount, currentPage, onPageChange }: Props) 
   const movePage = (page: number) => {
     if (totalPages < page || page < 1) return;
     onPageChange(page);
-    saveCurrentPageSessionStorage(page);
+    saveSession(page);
   };
 
   const renderPageNumbers = () => {

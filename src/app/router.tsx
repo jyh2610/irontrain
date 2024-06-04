@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import { Detail, Home } from "@src/pages";
 import { BaseLayout } from "./baseLayout";
+import { DetailProvider } from "@src/entities";
 
 export const router = createBrowserRouter([
   {
@@ -14,7 +15,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "detail/:id",
-        element: <Detail />,
+        element: (
+          <DetailProvider>
+            <Detail />
+          </DetailProvider>
+        ),
       },
     ],
   },

@@ -1,4 +1,4 @@
-import { IGetReviewWithAverages } from "@src/entities/board/type";
+import { IGetReview } from "@src/entities/board/type";
 import {
   ReviewDetailContainer,
   DetailTitleBox,
@@ -10,11 +10,11 @@ import {
   ReviewDetailContentContainer,
 } from "./styles";
 import { FaRegThumbsUp } from "react-icons/fa";
-import { calculateLikes, renderStars, storageManage } from "@src/shared";
+import { renderStars, storageManage } from "@src/shared";
 import { PutLikeReview } from "../../api";
 
 interface Props {
-  review: IGetReviewWithAverages;
+  review: IGetReview;
 }
 
 export const ReviewDetail = ({ review }: Props) => {
@@ -35,12 +35,12 @@ export const ReviewDetail = ({ review }: Props) => {
             <SubInfoBox>
               <RatingBox>
                 <p>{renderStars({ fullStars, halfStar })}</p>
-                <LikeBox onClick={() => PutLikeReview(review, UUID!, review.id)}>
+                <LikeBox onClick={() => PutLikeReview(review, UUID!)}>
                   <FaRegThumbsUp />
-                  <p>{calculateLikes(review.comments)}</p>
+                  <p>{review.likedUuids.length}</p>
                 </LikeBox>
               </RatingBox>
-              <p>2024-06-01</p>
+              <p>{review.date_created}</p>
             </SubInfoBox>
           </TitleInfoBox>
         </DetailTitleBox>
