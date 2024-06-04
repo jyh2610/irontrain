@@ -1,19 +1,17 @@
-import { IGetReview } from "../../type";
+import { IGetReviewWithAverages } from "../../type";
 import { useNavigate } from "react-router-dom";
-import { renderStars } from "../../utill/renderStart";
-import { truncateText } from "@src/shared";
+import { calculateLikes, renderStars, truncateText } from "@src/shared";
 import { FaRegThumbsUp } from "react-icons/fa";
-import { calculateLikes } from "../../utill/calculateAverageRating";
 import { CardContainer, ImgBox, CardInfoBox, RatingBox, TagBox, InfoTopBox, LikeBox } from "./styles";
 
 interface Props {
-  review: IGetReview;
+  review: IGetReviewWithAverages;
 }
 
 export const Card = ({ review }: Props) => {
   const navigate = useNavigate();
-  const fullStars = Math.floor(review.rating);
-  const halfStar = review.rating % 1 >= 0.5;
+  const fullStars = Math.floor(review.averageRating);
+  const halfStar = review.averageRating % 1 >= 0.5;
 
   return (
     <CardContainer

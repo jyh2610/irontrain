@@ -1,7 +1,7 @@
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { PaginationContainer, PageButton, IconBox, PageCount } from "./styles";
-import { sessionManage } from "../utills/sessionManage";
+import { storageManage } from "../utills/storageManage";
 
 interface Props {
   totalCount: number | undefined;
@@ -12,7 +12,7 @@ const range = 5;
 
 export const PageNationBar = ({ totalCount, currentPage, onPageChange }: Props) => {
   if (!totalCount) return null;
-  const { saveCurrentPageSessionStorage } = sessionManage();
+  const { saveCurrentPageSessionStorage } = storageManage();
   const totalPages = Math.ceil(totalCount / 12);
 
   let start = Math.max(1, Math.ceil(currentPage / range) * range - range + 1);

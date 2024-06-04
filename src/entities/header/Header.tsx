@@ -3,7 +3,7 @@ import { initialState } from "../board/constant";
 import { useBoardProvider } from "../board/context/FilterProvider";
 import { Dropdown } from "./Dropdown/Dropdown";
 import { SearchBar } from "./searchBar/SearchBar";
-import { category, starScore, reviewKind, sessionManage } from "@src/shared/index";
+import { category, starScore, reviewKind, storageManage } from "@src/shared/index";
 import { IoIosList, IoMdGrid } from "react-icons/io";
 import { HeaderContainer, FilterContainer, RotatedResetIcon, ViewSelectContainer, ViewIconWrapper } from "./styles";
 
@@ -13,7 +13,7 @@ interface Props {
 }
 export const Header = ({ selectedView, setSelectedView }: Props) => {
   const { setFilter } = useBoardProvider();
-  const { saveCurrentViewTypeSessionStorage } = sessionManage();
+  const { saveCurrentViewTypeSessionStorage } = storageManage();
 
   const handleViewChange = (view: "list" | "grid") => {
     setSelectedView(view);

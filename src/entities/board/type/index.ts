@@ -11,15 +11,16 @@ export interface BoardFilterState {
 }
 
 export interface Comment {
-  id: number;
+  id: string;
   rating: number;
   like: number;
   text: string;
   uuid: string;
+  likedUuids: string[];
 }
 
 export interface IGetReview {
-  id: number;
+  id: string;
   title: string;
   date_created: string;
   content: string;
@@ -28,5 +29,11 @@ export interface IGetReview {
   likes: number;
   path: string;
   uuid: string;
+  likedUuids: string[];
   comments: Comment[];
 }
+
+export type IGetReviewWithAverages = Omit<IGetReview, "comments"> & {
+  comments: Comment[];
+  averageRating: number;
+};

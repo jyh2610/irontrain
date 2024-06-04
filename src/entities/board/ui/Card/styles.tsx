@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  width: 20rem;
   border: 3px solid var(--color-border-gray);
   border-radius: 8px;
   overflow: hidden;
@@ -13,7 +12,7 @@ export const CardContainer = styled.div`
 `;
 
 export const ImgBox = styled.div`
-  width: 20rem;
+  width: 100%;
   height: 20rem;
   aspect-ratio: 1;
   img {

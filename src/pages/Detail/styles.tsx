@@ -9,6 +9,7 @@ export const DetailContainer = styled.div`
 `;
 
 export const ImgBox = styled.div`
+  width: 40%;
   background-color: black;
   overflow: hidden;
   img {

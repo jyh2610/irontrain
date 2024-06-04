@@ -1,11 +1,11 @@
+import { useEffect, useState } from "react";
 import { Header } from "@src/entities";
 import { Board } from "@src/entities/board/Board";
-import { sessionManage } from "@src/shared";
-import { useEffect, useState } from "react";
+import { storageManage } from "@src/shared";
 
 export const Home = () => {
   const [selectedView, setSelectedView] = useState<string>("grid");
-  const { currentViewType } = sessionManage();
+  const { currentViewType } = storageManage();
 
   useEffect(() => {
     currentViewType && setSelectedView(currentViewType);

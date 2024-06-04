@@ -1,13 +1,14 @@
 import React, { createContext, ReactNode, useContext, useState, useMemo, useEffect } from "react";
-import { BoardState, IGetReview } from "../type";
+import { BoardState, IGetReviewWithAverages } from "../type";
 import { initialState } from "../constant";
 import { useGetStoreList } from "../api/storeLists";
-import { sessionManage } from "@src/shared";
+import { storageManage } from "@src/shared";
+import { calculateAverages } from "../utill/calculateAverages";
 
 interface BoardManageContext {
   filter: BoardState;
   setFilter: React.Dispatch<React.SetStateAction<BoardState>>;
-  reviewData: { data: IGetReview[]; totalCount: number } | undefined;
+  reviewData: { data: IGetReviewWithAverages[]; totalCount: number } | undefined;
   page: number;
   setPage: React.Dispatch<React.SetStateAction<number>>;
 }
@@ -27,7 +28,15 @@ export const BoardProvider: React.FC<{ children: ReactNode }> = ({ children }) =
   const [page, setPage] = useState(1);
 
   const { data: reviewData } = useGetStoreList(page, 12, filter);
-  const { currentPage } = sessionManage();
+  const { currentPage } = storageManage();
+
+  const processedReviewData = useMemo(() => {
+    if (reviewData) {
+      const dataWithAverages = calculateAverages(reviewData.data);
+      return { ...reviewData, data: dataWithAverages };
+    }
+    return reviewData;
+  }, [reviewData]);
 
   useEffect(() => {
     currentPage && setPage(Number(currentPage));
@@ -37,7 +46,7 @@ export const BoardProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     () => ({
       filter,
       setFilter,
-      reviewData,
+      reviewData: processedReviewData,
       page,
       setPage,
     }),

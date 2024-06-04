@@ -1,4 +1,4 @@
-import { IGetReview } from "@src/entities/board/type";
+import { IGetReviewWithAverages } from "@src/entities/board/type";
 import {
   ReviewDetailContainer,
   DetailTitleBox,
@@ -9,17 +9,19 @@ import {
   RatingBox,
   ReviewDetailContentContainer,
 } from "./styles";
-import { renderStars } from "@src/entities/board/utill/renderStart";
 import { FaRegThumbsUp } from "react-icons/fa";
-import { calculateLikes } from "@src/entities/board/utill/calculateAverageRating";
+import { calculateLikes, renderStars, storageManage } from "@src/shared";
+import { PutLikeReview } from "../../api";
 
 interface Props {
-  review: IGetReview;
+  review: IGetReviewWithAverages;
 }
 
 export const ReviewDetail = ({ review }: Props) => {
   const fullStars = Math.floor(review.rating);
   const halfStar = review.rating % 1 >= 0.5;
+
+  const { UUID } = storageManage();
 
   return (
     <>
@@ -33,7 +35,7 @@ export const ReviewDetail = ({ review }: Props) => {
             <SubInfoBox>
               <RatingBox>
                 <p>{renderStars({ fullStars, halfStar })}</p>
-                <LikeBox>
+                <LikeBox onClick={() => PutLikeReview(review, UUID!, review.id)}>
                   <FaRegThumbsUp />
                   <p>{calculateLikes(review.comments)}</p>
                 </LikeBox>

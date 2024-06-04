@@ -4,6 +4,8 @@ export { category, starScore, reviewKind } from "./constants/dropdownList";
 export { useClickOutside } from "./hooks/useClickOutSide";
 
 //utills
-export { sessionManage } from "./utills/sessionManage";
+export { storageManage } from "./utills/storageManage";
 export { truncateText } from "./utills/truncateText";
 export { generateUUID } from "./utills/generateUUID";
+export { renderStars } from "./utills/renderStars";
+export { calculateLikes } from "./utills/calculateAverageRating";

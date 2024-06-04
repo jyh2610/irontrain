@@ -4,14 +4,17 @@ const storageKeys = {
   UUID: "UUID",
 } as const;
 
-export const sessionManage = () => {
+export const storageManage = () => {
   const currentSession = {
     currentPage: sessionStorage.getItem(storageKeys.currentPage),
     currentViewType: sessionStorage.getItem(storageKeys.currentViewType),
-    UUID: sessionStorage.getItem(storageKeys.UUID),
+  };
+  const currentLocal = {
+    UUID: localStorage.getItem(storageKeys.UUID),
   };
 
-  const { currentPage, currentViewType, UUID } = currentSession;
+  const { currentPage, currentViewType } = currentSession;
+  const { UUID } = currentLocal;
 
   const saveCurrentPageSessionStorage = (page: number) => {
     sessionStorage.setItem(storageKeys.currentPage, page + "");
@@ -21,8 +24,8 @@ export const sessionManage = () => {
     sessionStorage.setItem(storageKeys.currentViewType, type);
   };
 
-  const saveUUIDSessionStorage = (id: string) => {
-    sessionStorage.setItem(storageKeys.UUID, id);
+  const saveUUIDLocalStorage = (id: string) => {
+    localStorage.setItem(storageKeys.UUID, id);
   };
 
   /** 세션스토리지 키값으로 스토리지 삭제 */
@@ -36,7 +39,7 @@ export const sessionManage = () => {
     UUID,
     saveCurrentPageSessionStorage,
     saveCurrentViewTypeSessionStorage,
-    saveUUIDSessionStorage,
+    saveUUIDLocalStorage,
     removeSessionData,
   };
 };

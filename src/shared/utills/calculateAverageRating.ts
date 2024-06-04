@@ -1,4 +1,4 @@
-import { Comment } from "../type";
+import { Comment } from "@src/entities/board/type";
 
 export const calculateLikes = (comments: Comment[]) => {
   const numberOfLikes = comments.reduce((acc, comment) => {
