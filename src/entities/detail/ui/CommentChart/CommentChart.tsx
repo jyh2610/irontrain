@@ -1,4 +1,4 @@
-import { storageManage } from "@src/shared";
+import { generateUUID, storageManage } from "@src/shared";
 import {
   CommentChartContainer,
   CommentInputBox,
@@ -9,19 +9,34 @@ import {
 import { useDetailProvider } from "../../context/DetailReviewProvider";
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 import { useState } from "react";
-import { IPostComment, PostComment } from "../../api";
+import { usePutReview } from "../../api";
+import { Comment } from "@src/entities/board/type";
+import { updateNewReview } from "../../utills";
 
 export const CommentChart = () => {
   const [rating, setRating] = useState(1);
   const [inputValue, setInputValue] = useState("");
-  const { id } = useDetailProvider();
+  const { review } = useDetailProvider();
   const { UUID } = storageManage();
-  const comment: IPostComment = { rating: rating, text: inputValue, uuid: UUID! };
+  const comment: Comment = {
+    id: generateUUID(),
+    rating: rating,
+    text: inputValue,
+    uuid: UUID!,
+    like: 0,
+    likedUuids: [],
+  };
+
+  const newReview = review && updateNewReview(review, comment);
+
+  const { mutate: postAndGetReview } = usePutReview(newReview!);
+
   const handleStarClick = (index: number) => {
     setRating(index);
   };
-  const PostCommentHandler = () => {
-    PostComment({ comment, id: id! });
+  const PostCommentHandler = async () => {
+    await postAndGetReview();
+    setInputValue("");
   };
   return (
     <CommentChartContainer>
@@ -43,13 +58,3 @@ export const CommentChart = () => {
     </CommentChartContainer>
   );
 };
-{
-  /* <div>{}</div>
-        <ul>
-          {Object.entries(ratingDistribution).map(([rating, count]) => (
-            <li key={rating}>
-              {rating} stars: {count}
-            </li>
-          ))}
-        </ul> */
-}

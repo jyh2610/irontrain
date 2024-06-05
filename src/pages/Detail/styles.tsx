@@ -18,8 +18,8 @@ export const ImgBox = styled.div`
   display: flex;
   justify-content: center;
   img {
-    width: 60%;
-    height: 100%;
+    width: 30%;
+    height: 50%;
     object-fit: contain;
   }
 `;

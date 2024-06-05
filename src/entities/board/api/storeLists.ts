@@ -41,6 +41,6 @@ export const useGetStoreList = (page: number, limit: number, filters: BoardState
   return useQuery<{ data: IGetReview[]; totalCount: number }, Error>({
     queryKey: ["cardList", page, limit, filters],
     queryFn: () => getStoreList(page, limit, filters),
-    enabled: !!filters,
+    enabled: true,
   });
 };

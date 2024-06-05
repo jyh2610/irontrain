@@ -2,6 +2,7 @@ import React, { createContext, Dispatch, ReactNode, useContext, useMemo, useStat
 import { useGetReviewDetail } from "../api";
 import { useParams } from "react-router-dom";
 import { IGetReview } from "@src/entities/board/type";
+import { useQueryClient } from "@tanstack/react-query";
 
 interface DetailManageContext {
   review: IGetReview | undefined;
@@ -25,9 +26,9 @@ export const useDetailProvider = () => {
 export const DetailProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const { id } = useParams();
   const [page, setPage] = useState(1);
-
+  const queryClient = useQueryClient();
+  console.log(queryClient);
   const { data: review, isLoading, error } = useGetReviewDetail(id || "");
-
   const processedError = error ? error : null;
   const ratingDistribution = useMemo(() => {
     const distribution: Record<number, number> = { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };

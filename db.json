@@ -8,9 +8,12 @@
       "category": "일식",
       "path": "/src/shared/assets/japn/5.jpg",
       "rating": 1,
-      "likes": 25,
+      "likes": 27,
       "uuid": "",
-      "likedUuids": [],
+      "likedUuids": [
+        "e0a51016-8ac0-47b8-84c3-9219f3beb7d3",
+        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+      ],
       "comments": [
         {
           "id": 1,
@@ -22,6 +25,118 @@
           "likedUuids": [
             "e0a51016-8ac0-47b8-84c3-9219f3beb7d3"
           ]
+        },
+        {
+          "id": "828b5ede-b107-4f16-ac2c-8e10ae2ccdbe",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "5c485678-01cf-4eed-a610-a9f0c2850a69",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "b093f24d-2a6a-45da-989e-98372b7333f2",
+          "rating": 1,
+          "text": "1",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "b8a6cf19-29e4-425e-b3b0-76db01b2c198",
+          "rating": 1,
+          "text": "1",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "a0a53652-4400-443b-9270-05b61199a65f",
+          "rating": 1,
+          "text": "12",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "4dfe4f6b-b478-4577-b098-ea6ecd589bcd",
+          "rating": 1,
+          "text": "12",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "4cf6ed02-5df8-4bd3-ba98-45e6af68fcc0",
+          "rating": 1,
+          "text": "123",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "536fd743-11ac-4f01-bf91-2bd8d4dc6f1b",
+          "rating": 1,
+          "text": "123",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "418bdd5e-5e4b-49d5-bfa5-b1d19d39ded2",
+          "rating": 1,
+          "text": "1231",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "1d3fa362-5578-4a4f-9512-a8ee40445dea",
+          "rating": 1,
+          "text": "1231",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "465e17f2-1684-4d6d-8c13-a64159aadf0b",
+          "rating": 1,
+          "text": "12312",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "528f85c3-c094-4bd6-94c3-421d6e10daa8",
+          "rating": 1,
+          "text": "12312",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "c24b5f50-d60b-473b-bc76-492cb93d0e16",
+          "rating": 1,
+          "text": "123123",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "16bd6149-21da-4b35-be1a-ef72606c28dd",
+          "rating": 1,
+          "text": "123123",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
         }
       ],
       "averageRating": 2.5
@@ -46,6 +161,126 @@
           "text": "이 국밥 정말 최고에요!",
           "uuid": "1",
           "likedUuids": []
+        },
+        {
+          "id": "af6d4970-5e48-4aac-9f7c-f729b112fb11",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "f6794a2a-def3-4b73-9245-c4d75f988c3b",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "547a1f62-bb3c-41e2-8bda-8ea71fcef204",
+          "rating": 1,
+          "text": "1",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "49cd14f7-d611-462f-b3e0-48f58d93699b",
+          "rating": 1,
+          "text": "1",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "8330d782-719a-47cc-b2ce-07032e52028f",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "70f11dd7-ff29-4185-8954-bc0874c616d3",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "9e4c393d-7b2b-4b16-90ef-1e53246d2539",
+          "rating": 1,
+          "text": "2",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "34a3fd6f-ba3c-48df-9377-aed225145c73",
+          "rating": 1,
+          "text": "2",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "00f043c1-f6fb-480c-9171-1a56b2806313",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "871ece3f-7e9f-4a29-acba-550c59549815",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "70640f68-9385-4def-b33f-49c186a50f80",
+          "rating": 1,
+          "text": "1",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "19b7c108-f83c-4074-ba2c-b1535aac4600",
+          "rating": 1,
+          "text": "1",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "ebac876e-73b4-460a-8cc4-cff6176b0e67",
+          "rating": 1,
+          "text": "12",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "0d547d7b-af49-4fcf-8e30-b0b4af56a6cb",
+          "rating": 1,
+          "text": "12",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "adaf9dd9-c0ac-433e-a6a0-2926be288bf6",
+          "rating": 1,
+          "text": "1",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
         }
       ],
       "averageRating": 4.25,
@@ -59,7 +294,9 @@
       "category": "양식",
       "rating": 4.3,
       "path": "/src/shared/assets/itali/1.jpg",
-      "likedUuids": [],
+      "likedUuids": [
+        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+      ],
       "uuid": "",
       "comments": [
         {
@@ -70,7 +307,8 @@
           "uuid": "1",
           "likedUuids": []
         }
-      ]
+      ],
+      "likes": 0
     },
     {
       "id": 4,
@@ -80,18 +318,93 @@
       "category": "카페",
       "rating": 4.7,
       "path": "/src/shared/assets/cafe/1.jpg",
-      "likedUuids": [],
+      "likedUuids": [
+        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+      ],
       "uuid": "",
       "comments": [
         {
           "id": 1,
           "rating": 4,
-          "like": true,
+          "like": 2,
           "text": "차와 디저트가 정말 맛있어요.",
           "uuid": "1",
-          "likedUuids": []
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
+        },
+        {
+          "id": "6666fad2-9cd5-4ef0-a207-4fdae10d30d9",
+          "rating": 1,
+          "text": "11",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 1,
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
+        },
+        {
+          "id": "0707c10c-756d-412a-94ac-98070e840069",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 1,
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
+        },
+        {
+          "id": "fa47a17e-a6a1-4e7f-9e88-b4060b449f32",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 1,
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
+        },
+        {
+          "id": "aa3886dc-0c50-493b-934a-67ef0c3ac134",
+          "rating": 1,
+          "text": "123",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 1,
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
+        },
+        {
+          "id": "a95d6866-8b77-4c94-8759-dd169032857f",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 1,
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
+        },
+        {
+          "id": "fe145158-91c9-4ee5-abbb-4f1a66813951",
+          "rating": 1,
+          "text": "123123123",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 1,
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
+        },
+        {
+          "id": "4d2e5292-3559-4e9a-bdc9-47b1d5c83fd2",
+          "rating": 5,
+          "text": "123123123sadfasdf",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 1,
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
         }
-      ]
+      ],
+      "likes": 0
     },
     {
       "id": 5,
@@ -134,7 +447,8 @@
           "uuid": "1",
           "likedUuids": []
         }
-      ]
+      ],
+      "likes": -1
     },
     {
       "id": 7,
@@ -186,7 +500,9 @@
       "category": "카페",
       "rating": 4.6,
       "path": "/src/shared/assets/cafe/2.jpg",
-      "likedUuids": [],
+      "likedUuids": [
+        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+      ],
       "uuid": "",
       "comments": [
         {
@@ -197,7 +513,8 @@
           "uuid": "1",
           "likedUuids": []
         }
-      ]
+      ],
+      "likes": null
     },
     {
       "id": 10,

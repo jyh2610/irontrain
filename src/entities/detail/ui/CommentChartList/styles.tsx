@@ -17,5 +17,10 @@ export const CommentChartContentBox = styled.div`
 `;
 export const LikeBox = styled.div`
   display: flex;
+  justify-content: space-between;
+  item-align: center;
   gap: 0.3rem;
+  p {
+    width: 2rem;
+  }
 `;
