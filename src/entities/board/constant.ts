@@ -2,10 +2,10 @@ import { BoardState } from "./type";
 
 export const initialState: BoardState = {
   search: "",
-  date_created: [],
-  rating: [],
-  category: [],
-  type: [],
+  date_created: "",
+  rating: "",
+  category: "",
+  type: "",
 };
 
 export const filterMapping = {

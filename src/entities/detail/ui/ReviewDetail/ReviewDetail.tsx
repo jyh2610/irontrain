@@ -1,4 +1,4 @@
-import { IGetReview } from "@src/entities/board/type";
+import { IGetReviewWithAverages } from "@src/entities/board/type";
 import {
   ReviewDetailContainer,
   DetailTitleBox,
@@ -15,12 +15,12 @@ import { usePutLikeReview } from "../../api";
 import { useToast } from "@src/app/providers/ToastProvider";
 
 interface Props {
-  review: IGetReview;
+  review: IGetReviewWithAverages;
 }
 
 export const ReviewDetail = ({ review }: Props) => {
-  const fullStars = Math.floor(review.rating);
-  const halfStar = review.rating % 1 >= 0.5;
+  const fullStars = Math.floor(review.averageRating);
+  const halfStar = review.averageRating % 1 >= 0.5;
 
   const { UUID } = storageManage();
   const { mutate } = usePutLikeReview(review, UUID!);
@@ -33,9 +33,7 @@ export const ReviewDetail = ({ review }: Props) => {
       message: "좋아요를 누르셨습니다.",
     });
   };
-  const handleStarClick = (index: number) => {
-    setRating(index);
-  };
+
   return (
     <>
       <ReviewDetailContainer>

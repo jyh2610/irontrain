@@ -1,8 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { Detail, Home, PostReview } from "@src/pages";
+import { Detail, FixReview, Home, PostReview } from "@src/pages";
 import { BaseLayout } from "./baseLayout";
-import { DetailProvider } from "@src/entities";
 
 export const router = createBrowserRouter([
   {
@@ -15,15 +14,15 @@ export const router = createBrowserRouter([
       },
       {
         path: "detail/:id",
-        element: (
-          <DetailProvider>
-            <Detail />
-          </DetailProvider>
-        ),
+        element: <Detail />,
       },
       {
         path: "post_review",
         element: <PostReview />,
+      },
+      {
+        path: "fix_review",
+        element: <FixReview />,
       },
     ],
   },

@@ -45,7 +45,7 @@ const CommentChartListItem = ({ comment }: { comment: Comment }) => {
         <div>
           <LikeBox onClick={likeHandler}>
             <FaRegThumbsUp />
-            <p>{comment.likedUuids.length}</p>
+            <p>{comment?.likedUuids?.length}</p>
           </LikeBox>
           {UUID === comment.uuid && (
             <UpdateBtnBox>

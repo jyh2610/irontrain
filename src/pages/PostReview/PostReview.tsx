@@ -5,7 +5,8 @@ import { Post, testReviewValidate, usePostReview } from "@src/entities";
 import { IGetReview } from "@src/entities/board/type";
 import { generateUUID, storageManage } from "@src/shared";
 import { useToast } from "@src/app/providers/ToastProvider";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { usePutReview } from "@src/entities/detail/api";
 
 const { UUID } = storageManage();
 const initialState: IGetReview = {
@@ -21,18 +22,27 @@ const initialState: IGetReview = {
   likedUuids: [],
   comments: [],
 };
+
 export const PostReview = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { state, pathname } = location;
+  const reviewedData: IGetReview = state ? state?.review : initialState;
   const [image, setImage] = useState<File | null>(null);
-  const [reviewData, setReviewData] = useState<IGetReview>(initialState);
+  const [reviewData, setReviewData] = useState<IGetReview>(reviewedData ? reviewedData : initialState);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const { mutate } = usePostReview(reviewData);
+  const { mutate: regReview } = usePostReview(reviewData);
+  const { mutate: fixReview } = usePutReview(reviewData);
+
+  console.log(reviewData);
+
   const { showToast } = useToast();
 
   const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedImage = event.target.files?.[0];
     if (selectedImage) {
       setImage(selectedImage);
+      setReviewData((prev) => ({ ...prev, path: `/src/shared/assets/uploadImg/${selectedImage.name}` }));
     }
   };
 
@@ -51,7 +61,7 @@ export const PostReview = () => {
     }
 
     try {
-      mutate();
+      pathname.includes("fix_review") ? fixReview() : regReview();
       showToast({
         type: "success",
         message: "리뷰등록에 성공하였습니다.",
@@ -68,7 +78,7 @@ export const PostReview = () => {
   return (
     <DetailContainer>
       <ImgBox onClick={handleImgBoxClick}>
-        {!image ? (
+        {!image && reviewData.path.length === 0 ? (
           <UploadContainer>
             <ImgUploadLabel>
               <IoDuplicateOutline size={32} color="white" />
@@ -83,10 +93,10 @@ export const PostReview = () => {
             />
           </UploadContainer>
         ) : (
-          <img src={URL.createObjectURL(image)} alt="리뷰 이미지" />
+          <img src={reviewData.path} alt="리뷰 이미지" />
         )}
       </ImgBox>
-      <Post image={image} setReviewData={setReviewData} />
+      <Post image={image} reviewData={reviewData} setReviewData={setReviewData} />
       <RegButton type="button" onClick={submitReview}>
         등록하기
       </RegButton>

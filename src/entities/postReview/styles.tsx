@@ -30,10 +30,13 @@ export const IconBox = styled.div`
 export const TitleInfoBox = styled.div`
   width: 80%;
   display: flex;
-  flex-direction: column;
   gap: 0.2rem;
   input {
+    width: 70%;
     padding: 0.5rem;
+  }
+  div {
+    width: 40%;
   }
 `;
 

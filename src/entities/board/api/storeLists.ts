@@ -25,6 +25,7 @@ const getStoreList = async (page: number, limit: number, filters: BoardState) =>
       params[filterMapping[filterKey]] = filterValue;
     }
   });
+  console.log(filters);
 
   const res = await request<IGetReview[]>({
     method: "GET",
@@ -41,6 +42,6 @@ export const useGetStoreList = (page: number, limit: number, filters: BoardState
   return useQuery<{ data: IGetReview[]; totalCount: number }, Error>({
     queryKey: ["cardList", page, limit, filters],
     queryFn: () => getStoreList(page, limit, filters),
-    enabled: true,
+    enabled: !!filters,
   });
 };

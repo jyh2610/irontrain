@@ -25,9 +25,9 @@ export const Header = ({ selectedView, setSelectedView }: Props) => {
       <FilterContainer>
         <SearchBar />
         <Dropdown title="태그" dropList={category} />
-        <Dropdown vertical={true} title="별점" dropList={starScore} />
+        <Dropdown title="별점" dropList={starScore} />
         <Dropdown title="카테고리" dropList={reviewKind} />
-        <Dropdown vertical={true} title="유형순" dropList={["최신순", "추천순"]} />
+        <Dropdown title="유형순" dropList={["최신순", "추천순"]} />
         <RotatedResetIcon size={30} onClick={() => setFilter(initialState)} />
       </FilterContainer>
       <ViewSelectContainer>

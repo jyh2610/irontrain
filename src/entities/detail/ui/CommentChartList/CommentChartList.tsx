@@ -13,7 +13,7 @@ export const CommentChartList = () => {
         <span>{review?.comments.length}</span>
       </TitleBox>
       <CommentChartContainer>
-        {commentList?.map((comment) => <CommentChartListItem key={comment.uuid} comment={comment} />)}
+        {commentList?.map((comment) => <CommentChartListItem key={comment.id} comment={comment} />)}
       </CommentChartContainer>
     </>
   );

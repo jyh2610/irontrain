@@ -18,7 +18,7 @@ const VerticalDropdownList = ({ title, list, setIsOpen }: Props) => {
     setFilter((prev) => {
       return {
         ...prev,
-        [mappingKey]: [item],
+        [mappingKey]: item,
       };
     });
     setIsOpen(false);

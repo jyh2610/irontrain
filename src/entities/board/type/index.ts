@@ -4,10 +4,10 @@ export interface BoardState extends BoardFilterState {
 }
 
 export interface BoardFilterState {
-  date_created: string[];
-  rating: string[];
-  category: string[];
-  type: string[];
+  date_created: string;
+  rating: string;
+  category: string;
+  type: string;
 }
 
 export interface Comment {

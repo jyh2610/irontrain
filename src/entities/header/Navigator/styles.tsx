@@ -35,3 +35,8 @@ export const LogoContainer = styled.div`
   align-items: center;
   cursor: pointer;
 `;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  gap: 0.8rem;
+`;

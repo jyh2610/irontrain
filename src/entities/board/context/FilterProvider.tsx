@@ -28,6 +28,7 @@ export const BoardProvider: React.FC<{ children: ReactNode }> = ({ children }) =
   const [page, setPage] = useState(1);
   const { data: reviewData } = useGetStoreList(page, 12, filter);
   const { currentPage, UUID: uuid, saveUUIDLocalStorage } = storageManage();
+  console.log(filter);
 
   useEffect(() => {
     if (uuid === null) {
@@ -35,6 +36,7 @@ export const BoardProvider: React.FC<{ children: ReactNode }> = ({ children }) =
       saveUUIDLocalStorage(generatedUUID);
     }
   }, []);
+
   const processedReviewData = useMemo(() => {
     if (reviewData) {
       const dataWithAverages = calculateAverages(reviewData.data);

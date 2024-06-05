@@ -3,15 +3,13 @@ import { BiChevronDown } from "react-icons/bi";
 import { DropdownContainer, DropdownBox } from "./style";
 import { useClickOutside } from "@src/shared";
 import VerticalDropdownList from "./ui/VerticalDropdownList";
-import HorizontalDropdownList from "./ui/HorizontalDropdownList";
 
 interface Props {
   title: string;
-  vertical?: boolean;
   dropList: string[];
 }
 
-export const Dropdown = ({ title, vertical, dropList }: Props) => {
+export const Dropdown = ({ title, dropList }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useClickOutside(() => setIsOpen(false));
 
@@ -21,15 +19,7 @@ export const Dropdown = ({ title, vertical, dropList }: Props) => {
         <p>{title}</p>
         <BiChevronDown size={24} />
       </DropdownBox>
-      {isOpen && (
-        <>
-          {vertical ? (
-            <VerticalDropdownList title={title} list={dropList} setIsOpen={setIsOpen} />
-          ) : (
-            <HorizontalDropdownList title={title} list={dropList} setIsOpen={setIsOpen} />
-          )}
-        </>
-      )}
+      {isOpen && <VerticalDropdownList title={title} list={dropList} setIsOpen={setIsOpen} />}
     </DropdownContainer>
   );
 };

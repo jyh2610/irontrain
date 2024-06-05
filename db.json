@@ -10,10 +10,7 @@
       "rating": 1,
       "likes": 27,
       "uuid": "",
-      "likedUuids": [
-        "e0a51016-8ac0-47b8-84c3-9219f3beb7d3",
-        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-      ],
+      "likedUuids": ["e0a51016-8ac0-47b8-84c3-9219f3beb7d3", "0017a779-6fe4-4ba1-ad24-4deb1958d63e"],
       "comments": [
         {
           "id": 1,
@@ -22,9 +19,7 @@
           "like": 2,
           "text": "정말 맛있어요! 추천합니다.",
           "uuid": "1",
-          "likedUuids": [
-            "e0a51016-8ac0-47b8-84c3-9219f3beb7d3"
-          ]
+          "likedUuids": ["e0a51016-8ac0-47b8-84c3-9219f3beb7d3"]
         },
         {
           "id": "b093f24d-2a6a-45da-989e-98372b7333f2",
@@ -122,8 +117,7 @@
           "like": 0,
           "likedUuids": []
         }
-      ],
-      "averageRating": 2.5
+      ]
     },
     {
       "id": 2,
@@ -133,9 +127,7 @@
       "category": "한식",
       "rating": 4.5,
       "path": "/src/shared/assets/korea/1.jpg",
-      "likedUuids": [
-        "e0a51016-8ac0-47b8-84c3-9219f3beb7d3"
-      ],
+      "likedUuids": ["e0a51016-8ac0-47b8-84c3-9219f3beb7d3"],
       "uuid": "",
       "comments": [
         {
@@ -171,7 +163,6 @@
           "likedUuids": []
         }
       ],
-      "averageRating": 4.25,
       "likes": 0
     },
     {
@@ -182,9 +173,7 @@
       "category": "양식",
       "rating": 4.3,
       "path": "/src/shared/assets/itali/1.jpg",
-      "likedUuids": [
-        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-      ],
+      "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"],
       "uuid": "",
       "comments": [],
       "likes": 0
@@ -197,9 +186,7 @@
       "category": "카페",
       "rating": 4.7,
       "path": "/src/shared/assets/cafe/1.jpg",
-      "likedUuids": [
-        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-      ],
+      "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"],
       "uuid": "",
       "comments": [
         {
@@ -208,9 +195,7 @@
           "like": 2,
           "text": "차와 디저트가 정말 맛있어요.",
           "uuid": "1",
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
+          "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"]
         },
         {
           "id": "1835bc13-7c45-47e3-bf94-a52632b3d0a0",
@@ -353,9 +338,8 @@
           "uuid": "1"
         }
       ],
-      "averageRating": 4.2,
-      "likes": null,
-      "likedUuids": []
+      "likes": 1,
+      "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"]
     },
     {
       "id": 6,
@@ -365,7 +349,7 @@
       "category": "한식",
       "rating": 4.6,
       "path": "/src/shared/assets/korea/2.jpg",
-      "likedUuids": [],
+      "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"],
       "uuid": "",
       "comments": [
         {
@@ -377,7 +361,7 @@
           "likedUuids": []
         }
       ],
-      "likes": -1
+      "likes": 0
     },
     {
       "id": 7,
@@ -387,9 +371,7 @@
       "category": "디저트",
       "rating": 4.5,
       "path": "/src/shared/assets/dessert/2.jpg",
-      "likedUuids": [
-        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-      ],
+      "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"],
       "uuid": "",
       "comments": [
         {
@@ -398,9 +380,7 @@
           "like": 2,
           "text": "찹쌀떡이 쫄깃하고 맛있어요.",
           "uuid": "1",
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
+          "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"]
         }
       ],
       "likes": null
@@ -434,9 +414,7 @@
       "category": "카페",
       "rating": 4.6,
       "path": "/src/shared/assets/cafe/2.jpg",
-      "likedUuids": [
-        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-      ],
+      "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"],
       "uuid": "",
       "comments": [
         {
@@ -445,9 +423,7 @@
           "like": 2,
           "text": "디저트가 정말 맛있어요.",
           "uuid": "1",
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
+          "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"]
         }
       ],
       "likes": null
@@ -460,7 +436,7 @@
       "category": "한식",
       "rating": 4.8,
       "path": "/src/shared/assets/korea/3.jpg",
-      "likedUuids": [],
+      "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"],
       "uuid": "",
       "comments": [
         {
@@ -471,7 +447,8 @@
           "uuid": "1",
           "likedUuids": []
         }
-      ]
+      ],
+      "likes": null
     },
     {
       "id": 11,
@@ -1279,7 +1256,7 @@
       "category": "카페",
       "rating": 4.6,
       "path": "/src/shared/assets/cafe/2.jpg",
-      "likedUuids": [],
+      "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"],
       "uuid": "",
       "comments": [
         {
@@ -1290,7 +1267,9 @@
           "uuid": "1",
           "likedUuids": []
         }
-      ]
+      ],
+      "averageRating": 4.3,
+      "likes": null
     },
     {
       "id": 50,
@@ -1312,6 +1291,78 @@
           "likedUuids": []
         }
       ]
+    },
+    {
+      "id": 51,
+      "title": "123",
+      "date_created": "",
+      "content": "123",
+      "category": "",
+      "rating": 5,
+      "likes": 1,
+      "path": "/src/shared/assets/uploadImg/2.jpg",
+      "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+      "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"],
+      "comments": [],
+      "averageRating": 3
+    },
+    {
+      "id": 52,
+      "title": "내가만든 테스트",
+      "date_created": "",
+      "content": "내가만든 테스트12312",
+      "category": "",
+      "rating": 3,
+      "likes": 0,
+      "path": "/src/shared/assets/uploadImg/5.jpg",
+      "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+      "likedUuids": [],
+      "comments": [],
+      "averageRating": 0
+    },
+    {
+      "id": 53,
+      "title": "123",
+      "date_created": "",
+      "content": "123",
+      "category": "",
+      "rating": 5,
+      "likes": 0,
+      "path": "/src/shared/assets/uploadImg/5.jpg",
+      "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+      "likedUuids": [],
+      "comments": [
+        {
+          "id": "91bff3ca-1e92-4a48-baa2-3c33666da211",
+          "rating": 5,
+          "text": "11",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "922e1c35-5277-406c-a771-6fe5ecf9c4c8",
+          "rating": 1,
+          "text": "123",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 1,
+          "likedUuids": ["0017a779-6fe4-4ba1-ad24-4deb1958d63e"]
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "title": "123",
+      "date_created": "",
+      "content": "123",
+      "category": "",
+      "rating": 2,
+      "likes": 0,
+      "path": "/src/shared/assets/uploadImg/5.jpg",
+      "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+      "likedUuids": [],
+      "comments": [],
+      "averageRating": 5
     }
   ]
 }
