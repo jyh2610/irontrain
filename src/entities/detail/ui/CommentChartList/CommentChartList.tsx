@@ -12,7 +12,7 @@ export const CommentChartList = () => {
   return (
     <>
       <CommentChartContainer>
-        {commentList?.map((comment) => <CommentChartListItem key={comment.id} comment={comment} />)}
+        {commentList?.map((comment) => <CommentChartListItem key={comment.uuid} comment={comment} />)}
       </CommentChartContainer>
       <PageNationBar
         saveSession={saveCurrentCommentPageSessionStorage}

@@ -8,3 +8,12 @@ export const updateNewReview = (review: IGetReview, comment: Comment) => {
 
   return updatedReview;
 };
+
+export const deleteReviewComment = (review: IGetReview, id: string) => {
+  const updatedReview = {
+    ...review,
+    comments: review.comments.filter((comment) => comment.id !== id),
+  };
+
+  return updatedReview;
+};

@@ -1,5 +1,6 @@
 //ui
 export { Toast } from "./ui/Toast/Toast";
+export { Modal } from "./ui/Modal/ModalPortal";
 //hooks
 export { useClickOutside } from "./hooks/useClickOutSide";
 

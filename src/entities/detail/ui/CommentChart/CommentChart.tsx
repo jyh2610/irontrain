@@ -26,18 +26,17 @@ export const CommentChart = () => {
     like: 0,
     likedUuids: [],
   };
-
   const newReview = review && updateNewReview(review, comment);
-
   const { mutate: postAndGetReview } = usePutReview(newReview!);
-
-  const handleStarClick = (index: number) => {
-    setRating(index);
-  };
   const PostCommentHandler = async () => {
     await postAndGetReview();
     setInputValue("");
   };
+
+  const handleStarClick = (index: number) => {
+    setRating(index);
+  };
+
   return (
     <CommentChartContainer>
       <CommentInputContainer>

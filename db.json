@@ -306,6 +306,22 @@
           "text": "버거가 정말 맛있어요.",
           "uuid": "1",
           "likedUuids": []
+        },
+        {
+          "id": "8de37038-0e5b-4f4f-97f5-b483a6f9a6a6",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "23d780ed-a657-42da-aae7-30761d141926",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
         }
       ],
       "likes": 0
@@ -334,74 +350,124 @@
           ]
         },
         {
-          "id": "6666fad2-9cd5-4ef0-a207-4fdae10d30d9",
-          "rating": 1,
-          "text": "11",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 1,
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
-        },
-        {
-          "id": "0707c10c-756d-412a-94ac-98070e840069",
+          "id": "1835bc13-7c45-47e3-bf94-a52632b3d0a0",
           "rating": 1,
           "text": "",
           "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 1,
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
+          "like": 0,
+          "likedUuids": []
         },
         {
-          "id": "fa47a17e-a6a1-4e7f-9e88-b4060b449f32",
+          "id": "807ac52c-3ccb-4237-932a-70b8a3903df4",
           "rating": 1,
           "text": "",
           "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 1,
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
+          "like": 0,
+          "likedUuids": []
         },
         {
-          "id": "aa3886dc-0c50-493b-934a-67ef0c3ac134",
-          "rating": 1,
-          "text": "123",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 1,
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
-        },
-        {
-          "id": "a95d6866-8b77-4c94-8759-dd169032857f",
+          "id": "e00e87f9-fbf0-4d5b-b0b9-acad1d65e303",
           "rating": 1,
           "text": "",
           "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 1,
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
+          "like": 0,
+          "likedUuids": []
         },
         {
-          "id": "fe145158-91c9-4ee5-abbb-4f1a66813951",
+          "id": "e401c01e-e256-4e30-b50a-6a43a56a9084",
           "rating": 1,
-          "text": "123123123",
+          "text": "",
           "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 1,
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
+          "like": 0,
+          "likedUuids": []
         },
         {
-          "id": "4d2e5292-3559-4e9a-bdc9-47b1d5c83fd2",
-          "rating": 5,
-          "text": "123123123sadfasdf",
+          "id": "61905649-50ec-407e-8a52-1783779b812a",
+          "rating": 1,
+          "text": "",
           "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 1,
-          "likedUuids": [
-            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
-          ]
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "dd2962d6-bf17-45d4-96bf-091e0b272d11",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "57a756b2-cb35-472e-80c9-66a289c41dab",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "f9decbd4-d561-4c38-9730-583bcdadfa49",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "6d9cef47-a2d8-4deb-a9a0-5d33398994e3",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "7a4240c5-0cb1-4630-8490-7e73cdf80268",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "05f8ea7d-c2ca-445b-b02b-5e76d5b06bdf",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "0ddcb807-ab3d-4832-a301-668f31bfe8a9",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "8abc68ba-743b-4831-83f2-93dfde46ed12",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "d1210bf0-7370-408d-9b58-10cc8de312ea",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
+          "id": "cc573992-213f-4165-88b4-30ee774011d7",
+          "rating": 1,
+          "text": "",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
         }
       ],
       "likes": 0
