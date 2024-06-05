@@ -1,6 +1,6 @@
 import { BoardState } from "./type";
 
-export const initialState: BoardState = {
+export const initialFilterState: BoardState = {
   search: "",
   date_created: "",
   rating: "",

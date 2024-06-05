@@ -1,18 +1,19 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { IoDuplicateOutline } from "react-icons/io5";
 import { DetailContainer, ImgBox, ImgUploadLabel, RegButton, UploadContainer } from "./styles";
-import { Post, testReviewValidate, usePostReview } from "@src/entities";
+import { Post, testReviewValidate, useBoardProvider, usePostReview } from "@src/entities";
 import { IGetReview } from "@src/entities/board/type";
 import { generateUUID, storageManage } from "@src/shared";
 import { useToast } from "@src/app/providers/ToastProvider";
 import { useLocation, useNavigate } from "react-router-dom";
 import { usePutReview } from "@src/entities/detail/api";
+import { initialFilterState } from "@src/entities/board/constant";
 
 const { UUID } = storageManage();
 const initialState: IGetReview = {
   id: "",
   title: "",
-  date_created: "",
+  date_created: new Date().toISOString().split("T")[0],
   content: "",
   category: "",
   rating: 0,
@@ -26,15 +27,19 @@ const initialState: IGetReview = {
 export const PostReview = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
   const { state, pathname } = location;
   const reviewedData: IGetReview = state ? state?.review : initialState;
+
+  const { filter, setFilter } = useBoardProvider();
+
   const [image, setImage] = useState<File | null>(null);
   const [reviewData, setReviewData] = useState<IGetReview>(reviewedData ? reviewedData : initialState);
+
   const fileInputRef = useRef<HTMLInputElement>(null);
+
   const { mutate: regReview } = usePostReview(reviewData);
   const { mutate: fixReview } = usePutReview(reviewData);
-
-  console.log(reviewData);
 
   const { showToast } = useToast();
 
@@ -62,6 +67,7 @@ export const PostReview = () => {
 
     try {
       pathname.includes("fix_review") ? fixReview() : regReview();
+      setFilter(initialFilterState);
       showToast({
         type: "success",
         message: "리뷰등록에 성공하였습니다.",
@@ -74,6 +80,16 @@ export const PostReview = () => {
       });
     }
   };
+
+  useEffect(() => {
+    reviewedData &&
+      setReviewData((prev) => {
+        return {
+          ...prev,
+          category: filter.category,
+        };
+      });
+  }, [filter]);
 
   return (
     <DetailContainer>

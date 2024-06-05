@@ -13,8 +13,9 @@ export const DropdownBox = styled.div`
   gap: 0.8rem;
   width: 100%;
   height: 100%;
-  padding: 12px 16px;
+  padding: 0.65rem;
   border: 2px solid var(--color-border-gray);
   border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
 `;

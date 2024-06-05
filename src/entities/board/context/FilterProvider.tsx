@@ -1,6 +1,6 @@
 import React, { createContext, ReactNode, useContext, useState, useMemo, useEffect } from "react";
 import { BoardState, IGetReviewWithAverages } from "../type";
-import { initialState } from "../constant";
+import { initialFilterState } from "../constant";
 import { useGetStoreList } from "../api/storeLists";
 import { generateUUID, storageManage } from "@src/shared";
 import { calculateAverages } from "../utill/calculateAverages";
@@ -24,11 +24,10 @@ export const useBoardProvider = () => {
 };
 
 export const BoardProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [filter, setFilter] = useState<BoardState>(initialState);
+  const [filter, setFilter] = useState<BoardState>(initialFilterState);
   const [page, setPage] = useState(1);
   const { data: reviewData } = useGetStoreList(page, 12, filter);
   const { currentPage, UUID: uuid, saveUUIDLocalStorage } = storageManage();
-  console.log(filter);
 
   useEffect(() => {
     if (uuid === null) {

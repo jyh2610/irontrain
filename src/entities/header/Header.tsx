@@ -1,9 +1,9 @@
 import { Dispatch } from "react";
-import { initialState } from "../board/constant";
+import { initialFilterState } from "../board/constant";
 import { useBoardProvider } from "../board/context/FilterProvider";
 import { Dropdown } from "./Dropdown/Dropdown";
 import { SearchBar } from "./searchBar/SearchBar";
-import { category, starScore, reviewKind, storageManage } from "@src/shared/index";
+import { category, starScore, storageManage } from "@src/shared/index";
 import { IoIosList, IoMdGrid } from "react-icons/io";
 import { HeaderContainer, FilterContainer, RotatedResetIcon, ViewSelectContainer, ViewIconWrapper } from "./styles";
 
@@ -26,9 +26,7 @@ export const Header = ({ selectedView, setSelectedView }: Props) => {
         <SearchBar />
         <Dropdown title="태그" dropList={category} />
         <Dropdown title="별점" dropList={starScore} />
-        <Dropdown title="카테고리" dropList={reviewKind} />
-        <Dropdown title="유형순" dropList={["최신순", "추천순"]} />
-        <RotatedResetIcon size={30} onClick={() => setFilter(initialState)} />
+        <RotatedResetIcon size={30} onClick={() => setFilter(initialFilterState)} />
       </FilterContainer>
       <ViewSelectContainer>
         <ViewIconWrapper

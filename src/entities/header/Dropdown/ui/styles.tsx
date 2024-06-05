@@ -17,7 +17,7 @@ export const BasicDropListBox = styled.ul`
 export const BasicListBox = styled.li`
   width: 100%;
   padding: 1.6rem;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   text-align: center;
   cursor: pointer;

@@ -12,4 +12,4 @@ export { renderStars } from "./utills/renderStars";
 export { calculateLikes } from "./utills/calculateAverageRating";
 
 //constant
-export { category, starScore, reviewKind } from "./constants/dropdownList";
+export { category, starScore } from "./constants/dropdownList";

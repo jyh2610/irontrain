@@ -11,7 +11,6 @@ export const getReviewDetail = async (id: string): Promise<IGetReview> => {
   return res.data;
 };
 
-// Custom hook to use review details
 export const useGetReviewDetail = (id: string) => {
   return useQuery<IGetReview>({
     queryKey: ["review", id],
@@ -19,7 +18,6 @@ export const useGetReviewDetail = (id: string) => {
   });
 };
 
-// Update the review with the modified data
 const putReview = async (review: IGetReview): Promise<IGetReview> => {
   const res = await request<IGetReview>({
     method: "PUT",
