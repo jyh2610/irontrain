@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { Detail, Home } from "@src/pages";
+import { Detail, Home, PostReview } from "@src/pages";
 import { BaseLayout } from "./baseLayout";
 import { DetailProvider } from "@src/entities";
 
@@ -20,6 +20,10 @@ export const router = createBrowserRouter([
             <Detail />
           </DetailProvider>
         ),
+      },
+      {
+        path: "post_review",
+        element: <PostReview />,
       },
     ],
   },

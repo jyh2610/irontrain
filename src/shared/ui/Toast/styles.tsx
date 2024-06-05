@@ -11,7 +11,7 @@ export const ToastContainer = styled.div`
   width: calc(100% - 4rem);
   max-width: var(--max-width);
   padding: 1.5rem 2.4rem;
-  background: var(--color-point);
+  background: var(--color-point) !important;
   left: 2rem;
   right: 2rem;
   margin: 0 auto;

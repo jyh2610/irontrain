@@ -13,7 +13,9 @@ export const Navigate = () => {
         <h1>맛집을 게시하세요!</h1>
       </LogoContainer>
       <ButtonBox>
-        <button type="button">작성하기</button>
+        <button type="button" onClick={() => navigate("/post_review")}>
+          작성하기
+        </button>
       </ButtonBox>
     </NavigateContainer>
   );

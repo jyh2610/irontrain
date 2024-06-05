@@ -12,14 +12,21 @@ import { useState } from "react";
 import { usePutReview } from "../../api";
 import { Comment } from "@src/entities/board/type";
 import { updateNewReview } from "../../utills";
+import { useToast } from "@src/app/providers/ToastProvider";
 
-export const CommentChart = () => {
+interface Props {
+  initialComment?: Comment;
+  onClose?: () => void;
+}
+
+export const CommentChart = ({ initialComment, onClose }: Props) => {
+  const { showToast } = useToast();
   const [rating, setRating] = useState(1);
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState(initialComment ? initialComment.text : "");
   const { review } = useDetailProvider();
   const { UUID } = storageManage();
   const comment: Comment = {
-    id: generateUUID(),
+    id: initialComment ? initialComment.id : generateUUID(),
     rating: rating,
     text: inputValue,
     uuid: UUID!,
@@ -29,8 +36,29 @@ export const CommentChart = () => {
   const newReview = review && updateNewReview(review, comment);
   const { mutate: postAndGetReview } = usePutReview(newReview!);
   const PostCommentHandler = async () => {
-    await postAndGetReview();
-    setInputValue("");
+    if (inputValue.length === 0) {
+      showToast({
+        type: "fail",
+        message: "한글자 이상입력하세요!",
+      });
+      return;
+    }
+
+    try {
+      await postAndGetReview();
+      setInputValue("");
+      showToast({
+        type: "success",
+        message: "댓글이 입력되었습니다.",
+      });
+    } catch {
+      showToast({
+        type: "fail",
+        message: "댓글이 입력에 실패하였습니다.",
+      });
+    } finally {
+      onClose && onClose();
+    }
   };
 
   const handleStarClick = (index: number) => {
@@ -43,7 +71,7 @@ export const CommentChart = () => {
         <CommentRatingAverageBox>
           {[...Array(5)].map((_, index) => (
             <span key={index} onClick={() => handleStarClick(index + 1)}>
-              {index < rating ? <IoIosStar size={24} color="var(--color-point)" /> : <IoIosStarOutline size={24} />}
+              {index < rating ? <IoIosStar size={18} color="var(--color-point)" /> : <IoIosStarOutline size={18} />}
             </span>
           ))}
         </CommentRatingAverageBox>

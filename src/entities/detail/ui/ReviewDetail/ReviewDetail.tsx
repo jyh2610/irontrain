@@ -33,6 +33,9 @@ export const ReviewDetail = ({ review }: Props) => {
       message: "좋아요를 누르셨습니다.",
     });
   };
+  const handleStarClick = (index: number) => {
+    setRating(index);
+  };
   return (
     <>
       <ReviewDetailContainer>
@@ -56,6 +59,7 @@ export const ReviewDetail = ({ review }: Props) => {
         </DetailTitleBox>
       </ReviewDetailContainer>
       <ReviewDetailContentContainer>
+        <span>작성자 리뷰</span>
         <div>{renderStars({ fullStars, halfStar })}</div>
         <p>{review.content}</p>
       </ReviewDetailContentContainer>

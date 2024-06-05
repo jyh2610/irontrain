@@ -1,25 +1,20 @@
 import { useDetailProvider } from "@src/entities";
-import { CommentChartContainer } from "./styles";
-import { storageManage } from "@src/shared";
-import { PageNationBar } from "@src/shared/ui/PageNationBar";
+import { CommentChartContainer, TitleBox } from "./styles";
 import CommentChartListItem from "./CommentChartListItem";
 
 export const CommentChartList = () => {
-  const { review, page, setPage } = useDetailProvider();
-  const { saveCurrentCommentPageSessionStorage } = storageManage();
+  const { review } = useDetailProvider();
   const commentList = review?.comments;
 
   return (
     <>
+      <TitleBox>
+        <h1>댓글</h1>
+        <span>{review?.comments.length}</span>
+      </TitleBox>
       <CommentChartContainer>
         {commentList?.map((comment) => <CommentChartListItem key={comment.uuid} comment={comment} />)}
       </CommentChartContainer>
-      <PageNationBar
-        saveSession={saveCurrentCommentPageSessionStorage}
-        totalCount={review?.comments.length}
-        currentPage={page}
-        onPageChange={setPage}
-      />
     </>
   );
 };

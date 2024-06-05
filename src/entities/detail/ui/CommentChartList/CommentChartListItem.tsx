@@ -1,12 +1,12 @@
 import { FaRegThumbsUp } from "react-icons/fa";
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
-import { CommentChartBox, CommentChartContentBox, LikeBox } from "./styles";
+import { CommentChartBox, CommentChartContentBox, LikeBox, UpdateBtnBox } from "./styles";
 import { Comment } from "@src/entities/board/type";
 import { usePutLikeComment, usePutReview } from "../../api";
-import { Modal, generateUUID, storageManage } from "@src/shared";
+import { Modal, storageManage } from "@src/shared";
 import { useDetailProvider } from "@src/entities";
 import { useToast } from "@src/app/providers/ToastProvider";
-import { updateNewReview, deleteReviewComment } from "../../utills";
+import { deleteReviewComment } from "../../utills";
 import { useState } from "react";
 import { CommentChart } from "../CommentChart/CommentChart";
 
@@ -23,20 +23,9 @@ const CommentChartListItem = ({ comment }: { comment: Comment }) => {
       message: "좋아요를 누르셨습니다.",
     });
   };
-  // const updatedComment: Comment = {
-  //   id: comment.id,
-  //   rating: comment.rating,
-  //   text: "",
-  //   uuid: comment.uuid,
-  //   like: comment.like,
-  //   likedUuids: comment.likedUuids,
-  // };
+
   const newReview = review && deleteReviewComment(review, comment.id);
   const { mutate: postAndGetReview } = usePutReview(newReview!);
-  // const PostCommentHandler = async () => {
-  //   await postAndGetReview();
-  //   setInputValue("");
-  // };
 
   return (
     <>
@@ -58,15 +47,17 @@ const CommentChartListItem = ({ comment }: { comment: Comment }) => {
             <FaRegThumbsUp />
             <p>{comment.likedUuids.length}</p>
           </LikeBox>
-          <div>
-            <button onClick={() => setModal(true)}>수정</button>
-            <button onClick={() => postAndGetReview()}>삭제</button>
-          </div>
+          {UUID === comment.uuid && (
+            <UpdateBtnBox>
+              <button onClick={() => setModal(true)}>수정</button>
+              <button onClick={() => postAndGetReview()}>삭제</button>
+            </UpdateBtnBox>
+          )}
         </div>
       </CommentChartBox>
       {modal && (
         <Modal onClose={() => setModal(false)}>
-          <CommentChart />
+          <CommentChart onClose={() => setModal(false)} initialComment={comment} />
         </Modal>
       )}
     </>

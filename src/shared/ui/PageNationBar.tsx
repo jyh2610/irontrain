@@ -1,7 +1,6 @@
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { PaginationContainer, PageButton, IconBox, PageCount } from "./styles";
-import { storageManage } from "../utills/storageManage";
 
 interface Props {
   totalCount: number | undefined;

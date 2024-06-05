@@ -27,22 +27,6 @@
           ]
         },
         {
-          "id": "828b5ede-b107-4f16-ac2c-8e10ae2ccdbe",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "5c485678-01cf-4eed-a610-a9f0c2850a69",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
           "id": "b093f24d-2a6a-45da-989e-98372b7333f2",
           "rating": 1,
           "text": "1",
@@ -155,115 +139,19 @@
       "uuid": "",
       "comments": [
         {
+          "id": "511151a5-358b-468e-bf0c-33fb0e4029de",
+          "rating": 1,
+          "text": "asdf",
+          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
+          "like": 0,
+          "likedUuids": []
+        },
+        {
           "id": 1,
           "rating": 4,
           "like": 1,
           "text": "이 국밥 정말 최고에요!",
           "uuid": "1",
-          "likedUuids": []
-        },
-        {
-          "id": "af6d4970-5e48-4aac-9f7c-f729b112fb11",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "f6794a2a-def3-4b73-9245-c4d75f988c3b",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "547a1f62-bb3c-41e2-8bda-8ea71fcef204",
-          "rating": 1,
-          "text": "1",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "49cd14f7-d611-462f-b3e0-48f58d93699b",
-          "rating": 1,
-          "text": "1",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "8330d782-719a-47cc-b2ce-07032e52028f",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "70f11dd7-ff29-4185-8954-bc0874c616d3",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "9e4c393d-7b2b-4b16-90ef-1e53246d2539",
-          "rating": 1,
-          "text": "2",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "34a3fd6f-ba3c-48df-9377-aed225145c73",
-          "rating": 1,
-          "text": "2",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "00f043c1-f6fb-480c-9171-1a56b2806313",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "871ece3f-7e9f-4a29-acba-550c59549815",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "70640f68-9385-4def-b33f-49c186a50f80",
-          "rating": 1,
-          "text": "1",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "19b7c108-f83c-4074-ba2c-b1535aac4600",
-          "rating": 1,
-          "text": "1",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "ebac876e-73b4-460a-8cc4-cff6176b0e67",
-          "rating": 1,
-          "text": "12",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
           "likedUuids": []
         },
         {
@@ -298,32 +186,7 @@
         "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
       ],
       "uuid": "",
-      "comments": [
-        {
-          "id": 1,
-          "rating": 4,
-          "like": 1,
-          "text": "버거가 정말 맛있어요.",
-          "uuid": "1",
-          "likedUuids": []
-        },
-        {
-          "id": "8de37038-0e5b-4f4f-97f5-b483a6f9a6a6",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        },
-        {
-          "id": "23d780ed-a657-42da-aae7-30761d141926",
-          "rating": 1,
-          "text": "",
-          "uuid": "0017a779-6fe4-4ba1-ad24-4deb1958d63e",
-          "like": 0,
-          "likedUuids": []
-        }
-      ],
+      "comments": [],
       "likes": 0
     },
     {
@@ -524,18 +387,23 @@
       "category": "디저트",
       "rating": 4.5,
       "path": "/src/shared/assets/dessert/2.jpg",
-      "likedUuids": [],
+      "likedUuids": [
+        "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+      ],
       "uuid": "",
       "comments": [
         {
           "id": 1,
           "rating": 4,
-          "like": true,
+          "like": 2,
           "text": "찹쌀떡이 쫄깃하고 맛있어요.",
           "uuid": "1",
-          "likedUuids": []
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
         }
-      ]
+      ],
+      "likes": null
     },
     {
       "id": 8,
@@ -574,10 +442,12 @@
         {
           "id": 1,
           "rating": 4,
-          "like": true,
+          "like": 2,
           "text": "디저트가 정말 맛있어요.",
           "uuid": "1",
-          "likedUuids": []
+          "likedUuids": [
+            "0017a779-6fe4-4ba1-ad24-4deb1958d63e"
+          ]
         }
       ],
       "likes": null

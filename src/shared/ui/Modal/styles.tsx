@@ -44,21 +44,12 @@ export const ModalWrapper = styled.div`
     flex-shrink: 0;
   }
 
-  > img.modal-img {
-    position: relative;
-    object-fit: contain;
-    width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
-  > video.modal-video {
-    position: relative;
-    object-fit: contain;
-    width: 100%;
-    overflow: hidden;
-    max-height: 100%;
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 2rem;
   }
 `;
+
 export const CloseButton = styled(IoMdClose)`
   position: absolute;
   top: 1rem;

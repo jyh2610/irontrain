@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const ReviewDetailContainer = styled.div`
   display: flex;
   justify-content: start;
+  padding-top: 1rem;
 `;
 
 export const DetailTitleBox = styled.div`
   width: 100%;
   display: flex;
+  align-items: center;
   gap: 0.6rem;
 `;
 
@@ -30,19 +32,9 @@ export const TitleInfoBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-`;
-
-export const SubInfoBox = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--color-font-gray);
-`;
-
-export const RatingBox = styled.div`
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+  input {
+    padding: 0.5rem;
+  }
 `;
 
 export const LikeBox = styled.div`
@@ -56,8 +48,11 @@ export const ReviewDetailContentContainer = styled.div`
   margin-top: 2rem;
   padding: 2rem 0;
   border-top: 2px solid var(--color-border-gray);
-  border-bottom: 2px solid var(--color-border-gray);
   span {
-    color: var(--color-font-gray);
+    color: black;
+  }
+
+  textarea {
+    height: 15rem;
   }
 `;

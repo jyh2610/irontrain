@@ -19,7 +19,7 @@ export const ImgBox = styled.div`
   justify-content: center;
   img {
     width: 30%;
-    height: 50%;
+    height: 20rem;
     object-fit: contain;
   }
 `;

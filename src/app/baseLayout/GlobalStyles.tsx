@@ -17,6 +17,7 @@ ${reset}
     -ms-user-select: auto;
     user-select: auto;
     border: 1px solid black;
+    resize: none;
   }
   input:focus {
     outline: none;
