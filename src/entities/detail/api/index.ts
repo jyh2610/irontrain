@@ -46,18 +46,15 @@ export const usePutReview = (review: IGetReview) => {
 export const putLikeComment = async (review: IGetReview, uuid: string, commentId: string) => {
   const comment = review.comments.find((item) => item.id === commentId);
   if (!comment) {
-    console.error("Comment not found");
     return;
   }
   if (comment.likedUuids?.includes(uuid)) {
     comment.like--;
     comment.likedUuids = comment.likedUuids.filter((id) => id !== uuid);
-    console.log("Like removed successfully.");
   } else {
     comment.like++;
     comment.likedUuids = comment.likedUuids || [];
     comment.likedUuids.push(uuid);
-    console.log("Like added successfully.");
   }
 
   return await putReview(review);
@@ -72,7 +69,6 @@ export const putLikeReview = async (review: IGetReview, uuid: string): Promise<I
     review.likes++;
     review.likedUuids = review.likedUuids || [];
     review.likedUuids.push(uuid);
-    console.log("Like added to review successfully.");
   }
 
   return putReview(review);
