@@ -11,7 +11,7 @@ interface Props {
 }
 
 const VerticalDropdownList = ({ title, list, setIsOpen }: Props) => {
-  const { setFilter } = useBoardProvider();
+  const { setFilter, setPage } = useBoardProvider();
   const mappingKey: keyof BoardState = mappingTitle[title];
 
   const selectItem = (item: string) => {
@@ -21,6 +21,7 @@ const VerticalDropdownList = ({ title, list, setIsOpen }: Props) => {
         [mappingKey]: item,
       };
     });
+    setPage(1);
     setIsOpen(false);
   };
 
